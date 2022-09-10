@@ -1,0 +1,8 @@
+require('plugins.color')
+require('plugins.lualine')
+require('plugins.lspconfig')
+require("plugins.transparent")
+require("plugins.mason")
+require('plugins.treesitter')
+require("plugins.indent")
+require("plugins.luasnip")
