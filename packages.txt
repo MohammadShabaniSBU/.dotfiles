@@ -1,0 +1,10 @@
+alacritty
+neovim
+awesome
+stow
+openssh
+telegram-desktop
+discord
+brave-browser
+nodejs
+rustup
