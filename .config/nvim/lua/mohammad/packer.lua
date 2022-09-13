@@ -23,6 +23,8 @@ return require('packer').startup(function(use)
     use('nvim-telescope/telescope.nvim')
     -- plenary a telescope dependency
     use('nvim-lua/plenary.nvim')
+    -- file browser; telescope extention
+    use("nvim-telescope/telescope-file-browser.nvim")
 
     -- harpoon: to navigate between some files blazingly fast
     use('ThePrimeagen/harpoon')
@@ -44,4 +46,7 @@ return require('packer').startup(function(use)
 
     -- make transparent background
     use 'xiyaowong/nvim-transparent'
+
+    -- floating terminal
+    use "numToStr/FTerm.nvim"
 end)
