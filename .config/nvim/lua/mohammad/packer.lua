@@ -18,6 +18,9 @@ return require('packer').startup(function(use)
 
     use("mattn/vim-goimports")
 
+    -- comments
+    use('numToStr/Comment.nvim')
+
 
     -- fzf telescope
     use('nvim-telescope/telescope.nvim')
@@ -36,7 +39,7 @@ return require('packer').startup(function(use)
     use('nvim-treesitter/nvim-treesitter')
 
     -- color schemes
-    use 'RRethy/nvim-base16'
+    use "EdenEast/nightfox.nvim"
   
     -- status line in lua
     use {
@@ -45,8 +48,9 @@ return require('packer').startup(function(use)
     }
 
     -- make transparent background
-    use 'xiyaowong/nvim-transparent'
+    use('xiyaowong/nvim-transparent')
 
     -- floating terminal
-    use "numToStr/FTerm.nvim"
+    use("numToStr/FTerm.nvim")
+
 end)
