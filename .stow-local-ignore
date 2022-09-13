@@ -1,4 +1,5 @@
 .git
 README.md
 installer.sh
+packages.txt
 .gitignore
