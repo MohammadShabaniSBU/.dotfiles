@@ -7,9 +7,9 @@
 -- local ok, _ = pcall(vim.cmd, 'colorscheme base16-oceanicnext')
 -- local ok, _ = pcall(vim.cmd, 'colorscheme base16-onedark')
 -- local ok, _ = pcall(vim.cmd, 'colorscheme palenight')
-local ok, _ = pcall(vim.cmd, 'colorscheme base16-solarized-dark')
+--local ok, _ = pcall(vim.cmd, 'colorscheme base16-solarized-dark')
 -- local ok, _ = pcall(vim.cmd, 'colorscheme base16-solarized-light')
 -- local ok, _ = pcall(vim.cmd, 'colorscheme base16-tomorrow-night')
 
-vim.g.base16_dracula_transparent_sidebar = true
-vim.g.base16_dracula_transparent= true
+--vim.g.base16_dracula_transparent_sidebar = true
+--vim.g.base16_dracula_transparent= true
