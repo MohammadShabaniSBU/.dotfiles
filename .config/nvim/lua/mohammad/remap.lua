@@ -1,5 +1,6 @@
 local nnoremap = require("mohammad.keymap").nnoremap
 local inoremap = require("mohammad.keymap").inoremap
+local tnoremap = require("mohammad.keymap").tnoremap
 
 inoremap("jk", "<Esc>")
 inoremap("kj", "<Esc>")
@@ -28,4 +29,5 @@ nnoremap("<C-l>", "<C-w><C-l>")
 
 -- floating terminal
 nnoremap("<leader><CR>", "<cmd>lua require('FTerm').toggle()<CR>")
+tnoremap("<leader><CR>", "<cmd>lua require('FTerm').toggle()<CR>")
 nnoremap("<leader>gg", function() require("FTerm"):new({cmd= "gitui"}):toggle() end)
