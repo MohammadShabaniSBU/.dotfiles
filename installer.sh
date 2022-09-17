@@ -1,22 +1,15 @@
 #! /bin/bash
 
-echo "Update system..."
-sudo pacman -Syu --noconfirm > /dev/null
-echo "System updated"
+sudo pacman -Syu --noconfirm 
 
-echo "Install packages..."
-sudo pacman -S --noconfirm $(cat ./packages.txt) > /dev/null
-echo "Packages Installed"
+sudo pacman -S --noconfirm $(cat ./packages.txt) 
 
 stow -t ~/ .
-echo "Configs linked to home directory"
 
 if [ ! -d ~/.local/share/nvim/site/pack/packer/start/packer.nvim ]; then
     git clone --depth 1 https://github.com/wbthomason/packer.nvim\
-        ~/.local/share/nvim/site/pack/packer/start/packer.nvim > /dev/null
-    echo "Packer installed"
+        ~/.local/share/nvim/site/pack/packer/start/packer.nvim 
 else
-    echo "Packer detected"
 fi
 
 nvim --headless \

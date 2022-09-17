@@ -65,6 +65,9 @@ lspconfig.gopls.setup {
   },
 }
 
+-- javascript / typescript config
+lspconfig.tsserver.setup{}
+
 lspconfig.dockerls.setup{}
 
 lspconfig.sumneko_lua.setup{}
