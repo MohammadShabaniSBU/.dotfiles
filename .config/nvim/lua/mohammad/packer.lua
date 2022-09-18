@@ -3,7 +3,7 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
-  
+
      -- install LSPs
     use { "williamboman/mason.nvim" }
 
@@ -40,7 +40,7 @@ return require('packer').startup(function(use)
 
     -- color schemes
     use "EdenEast/nightfox.nvim"
-  
+
     -- status line in lua
     use {
       'nvim-lualine/lualine.nvim',
@@ -53,4 +53,6 @@ return require('packer').startup(function(use)
     -- floating terminal
     use("numToStr/FTerm.nvim")
 
+    -- whichkey
+   use("folke/which-key.nvim")
 end)
