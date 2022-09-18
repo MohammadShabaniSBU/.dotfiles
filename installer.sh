@@ -30,4 +30,21 @@ nvim --headless \
         typescript-language-server \
     +qa
 
+function zsh_full() {
+    #install oh my zsh
+    git clone --depth 1 https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
 
+    # install powerlevel10k theme 
+    git clone --depth=1 https://github.com/romkatv/powerlevel10k.git \
+        ~/.oh-my-zsh/custom/themes/powerlevel10k
+
+    # autosuggestion, fast syntax highlight, autocomplete
+    git clone --depth 1 https://github.com/zsh-users/zsh-autosuggestions \
+        ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+    git clone --depth 1 https://github.com/zdharma-continuum/fast-syntax-highlighting.git \
+        ~/.oh-my-zsh/custom/plugins/fast-syntax-highlighting
+    git clone --depth 1 https://github.com/marlonrichert/zsh-autocomplete.git \
+        ~/.oh-my-zsh/custom/plugins/zsh-autocomplete
+
+    chsh -s "$(which zsh)"
+}
