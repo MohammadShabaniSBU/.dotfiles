@@ -1,10 +1,11 @@
 alacritty
-neovim
 awesome
-stow
-openssh
-telegram-desktop
-discord
 brave-browser
+discord
+neovim
 nodejs
+openssh
 rustup
+scrot
+stow
+telegram-desktop
