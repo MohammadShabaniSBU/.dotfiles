@@ -6,6 +6,9 @@ neovim
 nodejs
 openssh
 rustup
+php
 scrot
+sddm
 stow
 telegram-desktop
+variety
