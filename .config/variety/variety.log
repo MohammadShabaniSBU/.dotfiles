@@ -1,0 +1,1161 @@
+INFO: 2022-09-20 12:20:52,070: main() 'Using profile folder /home/mohammad/.config/variety/'
+INFO: 2022-09-20 12:20:52,072: perform_upgrade() 'Last run version was 0.8.9 or earlier, current version is 0.8.9'
+INFO: 2022-09-20 12:20:52,174: process_command() 'Received command: []'
+INFO: 2022-09-20 12:20:52,176: start() 'Using data_path /usr/share/variety'
+INFO: 2022-09-20 12:20:52,176: load() 'Jumble loading'
+INFO: 2022-09-20 12:20:52,176: _walk_modules() 'Jumble loading module in __init__ from /usr/lib/python3.10/site-packages/variety/plugins/builtin/__init__.py'
+INFO: 2022-09-20 12:20:52,176: _walk_modules() 'Jumble loading module in LegacyDisplayModesPlugin from /usr/lib/python3.10/site-packages/variety/plugins/builtin/display_modes/LegacyDisplayModesPlugin.py'
+INFO: 2022-09-20 12:20:52,176: load() 'Jumble found plugin class: <class 'LegacyDisplayModesPlugin.LegacyDisplayModesPlugin'>: {'name': 'LegacyDisplayModesPlugin', 'description': 'Legacy display mode for compatibility with past Variety versions', 'version': '1.0', 'author': 'Peter Levi'}'
+INFO: 2022-09-20 12:20:52,177: _walk_modules() 'Jumble loading module in GnomeDisplayModesPlugin from /usr/lib/python3.10/site-packages/variety/plugins/builtin/display_modes/GnomeDisplayModesPlugin.py'
+INFO: 2022-09-20 12:20:52,177: load() 'Jumble found plugin class: <class 'GnomeDisplayModesPlugin.GnomeDisplayModesPlugin'>: {'name': 'GnomeDisplayModesPlugin', 'description': 'Display modes relying on the underlying desktop environment', 'version': '1.0', 'author': 'Peter Levi'}'
+INFO: 2022-09-20 12:20:52,177: _walk_modules() 'Jumble loading module in __init__ from /usr/lib/python3.10/site-packages/variety/plugins/builtin/display_modes/__init__.py'
+INFO: 2022-09-20 12:20:52,177: _walk_modules() 'Jumble loading module in ResizingDisplayModesPlugin from /usr/lib/python3.10/site-packages/variety/plugins/builtin/display_modes/ResizingDisplayModesPlugin.py'
+INFO: 2022-09-20 12:20:52,177: load() 'Jumble found plugin class: <class 'ResizingDisplayModesPlugin.ResizingDisplayModesPlugin'>: {'name': 'ResizingDisplayModesPlugin', 'description': 'Display modes that use image resizing within Variety', 'version': '1.0', 'author': 'Peter Levi'}'
+INFO: 2022-09-20 12:20:52,177: _walk_modules() 'Jumble loading module in GoodreadsSource from /usr/lib/python3.10/site-packages/variety/plugins/builtin/quotes/GoodreadsSource.py'
+INFO: 2022-09-20 12:20:52,181: load() 'Jumble found plugin class: <class 'GoodreadsSource.GoodreadsSource'>: {'name': 'Goodreads', 'description': 'Fetches quotes from Goodreads.com', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2022-09-20 12:20:52,181: _walk_modules() 'Jumble loading module in UrbanDictionarySource from /usr/lib/python3.10/site-packages/variety/plugins/builtin/quotes/UrbanDictionarySource.py'
+INFO: 2022-09-20 12:20:52,181: load() 'Jumble found plugin class: <class 'UrbanDictionarySource.UrbanDictionarySource'>: {'name': 'Urban Dictionary', 'description': 'Displays definitions from Urban Dictionary', 'author': 'James Miller', 'version': '0.1'}'
+INFO: 2022-09-20 12:20:52,181: _walk_modules() 'Jumble loading module in __init__ from /usr/lib/python3.10/site-packages/variety/plugins/builtin/quotes/__init__.py'
+INFO: 2022-09-20 12:20:52,181: _walk_modules() 'Jumble loading module in QuotationsPageSource from /usr/lib/python3.10/site-packages/variety/plugins/builtin/quotes/QuotationsPageSource.py'
+INFO: 2022-09-20 12:20:52,182: load() 'Jumble found plugin class: <class 'QuotationsPageSource.QuotationsPageSource'>: {'name': 'TheQuotationsPage.com', 'description': 'Fetches quotes from TheQuotationsPage.com', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2022-09-20 12:20:52,182: _walk_modules() 'Jumble loading module in LocalFilesSource from /usr/lib/python3.10/site-packages/variety/plugins/builtin/quotes/LocalFilesSource.py'
+INFO: 2022-09-20 12:20:52,182: load() 'Jumble found plugin class: <class 'LocalFilesSource.LocalFilesSource'>: {'name': 'Local text files', 'description': 'Displays quotes, defined in local text files.\nPut your own txt files in: ~/.config/variety/pluginconfig/quotes/.\nThe file format is:\n\nquote -- author\n.\nsecond quote -- another author\n.\netc...\n\nExample: http://rvelthuis.de/zips/quotes.txt', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2022-09-20 12:20:52,182: _walk_modules() 'Jumble loading module in FortuneSource from /usr/lib/python3.10/site-packages/variety/plugins/builtin/quotes/FortuneSource.py'
+INFO: 2022-09-20 12:20:52,183: load() 'Jumble found plugin class: <class 'FortuneSource.FortuneSource'>: {'name': 'UNIX fortune program', 'description': 'Displays quotes using the UNIX fortune program. You may want to install additional fortune packs, e.g. fortunes-bofh-excuses.', 'author': 'Dan Jones', 'version': '0.1'}'
+INFO: 2022-09-20 12:20:52,183: _walk_modules() 'Jumble loading module in ArtStationDownloader from /usr/lib/python3.10/site-packages/variety/plugins/builtin/downloaders/ArtStationDownloader.py'
+INFO: 2022-09-20 12:20:52,183: _walk_modules() 'Jumble loading module in MediaRSSSource from /usr/lib/python3.10/site-packages/variety/plugins/builtin/downloaders/MediaRSSSource.py'
+INFO: 2022-09-20 12:20:52,184: load() 'Jumble found plugin class: <class 'MediaRSSSource.MediaRSSSource'>: {'name': 'MediaRSSSource', 'description': 'Configurable source for fetching images from MediaRSS feeds', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2022-09-20 12:20:52,184: _walk_modules() 'Jumble loading module in UnsplashDownloader from /usr/lib/python3.10/site-packages/variety/plugins/builtin/downloaders/UnsplashDownloader.py'
+INFO: 2022-09-20 12:20:52,185: load() 'Jumble found plugin class: <class 'UnsplashDownloader.UnsplashDownloader'>: {'name': 'UnsplashDownloader', 'description': 'High-resolution photos from Unsplash.com', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2022-09-20 12:20:52,185: _walk_modules() 'Jumble loading module in BingDownloader from /usr/lib/python3.10/site-packages/variety/plugins/builtin/downloaders/BingDownloader.py'
+INFO: 2022-09-20 12:20:52,185: load() 'Jumble found plugin class: <class 'BingDownloader.BingDownloader'>: {'name': 'BingDownloader', 'description': 'Bing Photo of the Day', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2022-09-20 12:20:52,185: _walk_modules() 'Jumble loading module in RedditSource from /usr/lib/python3.10/site-packages/variety/plugins/builtin/downloaders/RedditSource.py'
+INFO: 2022-09-20 12:20:52,186: load() 'Jumble found plugin class: <class 'RedditSource.RedditSource'>: {'name': 'RedditSource', 'description': 'Configurable source for fetching images from Reddit', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2022-09-20 12:20:52,186: _walk_modules() 'Jumble loading module in WallhavenSource from /usr/lib/python3.10/site-packages/variety/plugins/builtin/downloaders/WallhavenSource.py'
+INFO: 2022-09-20 12:20:52,186: load() 'Jumble found plugin class: <class 'WallhavenSource.WallhavenSource'>: {'name': 'WallhavenSource', 'description': 'Configurable source for fetching images from Wallhaven.cc', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2022-09-20 12:20:52,187: _walk_modules() 'Jumble loading module in APODDownloader from /usr/lib/python3.10/site-packages/variety/plugins/builtin/downloaders/APODDownloader.py'
+INFO: 2022-09-20 12:20:52,187: load() 'Jumble found plugin class: <class 'APODDownloader.APODDownloader'>: {'name': 'APODDownloader', 'description': 'NASA Astro Pic of the Day', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2022-09-20 12:20:52,187: _walk_modules() 'Jumble loading module in __init__ from /usr/lib/python3.10/site-packages/variety/plugins/builtin/downloaders/__init__.py'
+INFO: 2022-09-20 12:20:52,187: _walk_modules() 'Jumble loading module in UnsplashConfigurableSource from /usr/lib/python3.10/site-packages/variety/plugins/builtin/downloaders/UnsplashConfigurableSource.py'
+INFO: 2022-09-20 12:20:52,188: load() 'Jumble found plugin class: <class 'UnsplashConfigurableSource.UnsplashConfigurableSource'>: {'name': 'UnsplashConfigurableSource', 'description': 'Configurable source for fetching photos from Unsplash.com', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2022-09-20 12:20:52,188: _walk_modules() 'Jumble loading module in WallhavenDownloader from /usr/lib/python3.10/site-packages/variety/plugins/builtin/downloaders/WallhavenDownloader.py'
+INFO: 2022-09-20 12:20:52,188: _walk_modules() 'Jumble loading module in WallhavenLegacyDownloader from /usr/lib/python3.10/site-packages/variety/plugins/builtin/downloaders/WallhavenLegacyDownloader.py'
+INFO: 2022-09-20 12:20:52,189: _walk_modules() 'Jumble loading module in ArtStationSource from /usr/lib/python3.10/site-packages/variety/plugins/builtin/downloaders/ArtStationSource.py'
+INFO: 2022-09-20 12:20:52,189: load() 'Jumble found plugin class: <class 'ArtStationSource.ArtStationSource'>: {'name': 'ArtStationSource', 'description': 'Configurable source for fetching images from ArtStation', 'author': 'Denis Gordeev', 'version': '0.1'}'
+INFO: 2022-09-20 12:20:52,189: _walk_modules() 'Jumble loading module in RedditDownloader from /usr/lib/python3.10/site-packages/variety/plugins/builtin/downloaders/RedditDownloader.py'
+INFO: 2022-09-20 12:20:52,190: _walk_modules() 'Jumble loading module in MediaRSSDownloader from /usr/lib/python3.10/site-packages/variety/plugins/builtin/downloaders/MediaRSSDownloader.py'
+INFO: 2022-09-20 12:20:52,190: _walk_modules() 'Jumble loading module in EarthviewDownloader from /usr/lib/python3.10/site-packages/variety/plugins/builtin/downloaders/EarthviewDownloader.py'
+INFO: 2022-09-20 12:20:52,190: load() 'Jumble found plugin class: <class 'EarthviewDownloader.EarthviewDownloader'>: {'name': 'EarthviewDownloader', 'description': 'Google Earth View Wallpapers', 'author': 'Peter Levi', 'version': '0.1'}'
+INFO: 2022-09-20 12:20:52,190: _walk_modules() 'Jumble loading module in NationalGeographicDownloader from /usr/lib/python3.10/site-packages/variety/plugins/builtin/downloaders/NationalGeographicDownloader.py'
+INFO: 2022-09-20 12:20:52,191: load() 'Jumble found plugin class: <class 'NationalGeographicDownloader.NationalGeographicDownloader'>: {'name': 'NationalGeographicDownloader', 'description': "National Geographic's photo of the day", 'author': 'Eric Rösch', 'version': '0.1'}'
+INFO: 2022-09-20 12:20:52,197: reload_config() 'Creating new downloader for type bing, location Bing Photo of the Day'
+INFO: 2022-09-20 12:20:52,197: reload_config() 'Creating new downloader for type earthview, location Google Earth View Wallpapers'
+INFO: 2022-09-20 12:20:52,197: reload_config() 'Creating new downloader for type natgeo, location National Geographic's photo of the day'
+INFO: 2022-09-20 12:20:52,198: log_options() 'Loaded options:'
+INFO: 2022-09-20 12:20:52,198: log_options() 'change_enabled = True'
+INFO: 2022-09-20 12:20:52,198: log_options() 'change_interval = 300'
+INFO: 2022-09-20 12:20:52,198: log_options() 'change_on_start = False'
+INFO: 2022-09-20 12:20:52,198: log_options() 'clipboard_enabled = False'
+INFO: 2022-09-20 12:20:52,198: log_options() 'clipboard_hosts = ['wallhaven.cc', 'wallpapers.net', 'flickr.com', 'imgur.com', 'deviantart.com', 'interfacelift.com', 'vladstudio.com', 'imageshack.us', 'deviantart.net', 'imageshack.com']'
+INFO: 2022-09-20 12:20:52,198: log_options() 'clipboard_use_whitelist = True'
+INFO: 2022-09-20 12:20:52,198: log_options() 'clock_date_font = CaskaydiaCove Nerd Font Mono Italic 30'
+INFO: 2022-09-20 12:20:52,198: log_options() 'clock_enabled = False'
+INFO: 2022-09-20 12:20:52,198: log_options() 'clock_filter = -density 100 -font `fc-match -f '%{file[0]}' '%CLOCK_FONT_NAME'` -pointsize %CLOCK_FONT_SIZE -gravity SouthEast -fill '#00000044' -annotate 0x0+[%HOFFSET+58]+[%VOFFSET+108] '%H:%M' -fill white -annotate 0x0+[%HOFFSET+60]+[%VOFFSET+110] '%H:%M' -font `fc-match -f '%{file[0]}' '%DATE_FONT_NAME'` -pointsize %DATE_FONT_SIZE -fill '#00000044' -annotate 0x0+[%HOFFSET+58]+[%VOFFSET+58] '%A, %B %d' -fill white -annotate 0x0+[%HOFFSET+60]+[%VOFFSET+60] '%A, %B %d''
+INFO: 2022-09-20 12:20:52,198: log_options() 'clock_font = CaskaydiaCove Nerd Font Mono 70'
+INFO: 2022-09-20 12:20:52,198: log_options() 'configfile = /home/mohammad/.config/variety/variety.conf'
+INFO: 2022-09-20 12:20:52,198: log_options() 'copyto_enabled = False'
+INFO: 2022-09-20 12:20:52,198: log_options() 'copyto_folder = Default'
+INFO: 2022-09-20 12:20:52,198: log_options() 'desired_color = [160, 160, 160]'
+INFO: 2022-09-20 12:20:52,198: log_options() 'desired_color_enabled = False'
+INFO: 2022-09-20 12:20:52,198: log_options() 'download_folder = /home/mohammad/.config/variety/Downloaded'
+INFO: 2022-09-20 12:20:52,198: log_options() 'download_preference_ratio = 0.9'
+INFO: 2022-09-20 12:20:52,198: log_options() 'favorites_folder = /home/mohammad/.config/variety/Favorites'
+INFO: 2022-09-20 12:20:52,198: log_options() 'favorites_operations = [['Downloaded', 'Copy'], ['Fetched', 'Move'], ['Others', 'Copy']]'
+INFO: 2022-09-20 12:20:52,198: log_options() 'fetched_folder = /home/mohammad/.config/variety/Fetched'
+INFO: 2022-09-20 12:20:52,198: log_options() 'filters = [[False, 'Keep original', ''], [False, 'Grayscale', '-type Grayscale'], [False, 'Heavy blur', '-scale 20% -blur 0x10 -resize 500%'], [False, 'Soft blur', '-scale 20% -blur 0x2 -resize 500%'], [False, 'Oil painting', '-paint 8'], [False, 'Pointilism', '-spread 10 -noise 3'], [False, 'Pixellate', '-scale 3% -scale 3333%']]'
+INFO: 2022-09-20 12:20:52,198: log_options() 'get_wallpaper_script = /home/mohammad/.config/variety/scripts/get_wallpaper'
+INFO: 2022-09-20 12:20:52,198: log_options() 'icon = Light'
+INFO: 2022-09-20 12:20:52,198: log_options() 'internet_enabled = True'
+INFO: 2022-09-20 12:20:52,198: log_options() 'lightness_enabled = False'
+INFO: 2022-09-20 12:20:52,198: log_options() 'lightness_mode = 0'
+INFO: 2022-09-20 12:20:52,198: log_options() 'min_rating = 4'
+INFO: 2022-09-20 12:20:52,198: log_options() 'min_rating_enabled = False'
+INFO: 2022-09-20 12:20:52,198: log_options() 'min_size = 80'
+INFO: 2022-09-20 12:20:52,198: log_options() 'min_size_enabled = False'
+INFO: 2022-09-20 12:20:52,198: log_options() 'quota_enabled = True'
+INFO: 2022-09-20 12:20:52,198: log_options() 'quota_size = 1000'
+INFO: 2022-09-20 12:20:52,198: log_options() 'quotes_authors = '
+INFO: 2022-09-20 12:20:52,198: log_options() 'quotes_bg_color = [80, 80, 80]'
+INFO: 2022-09-20 12:20:52,198: log_options() 'quotes_bg_opacity = 0'
+INFO: 2022-09-20 12:20:52,198: log_options() 'quotes_change_enabled = False'
+INFO: 2022-09-20 12:20:52,198: log_options() 'quotes_change_interval = 300'
+INFO: 2022-09-20 12:20:52,198: log_options() 'quotes_disabled_sources = ['Urban Dictionary']'
+INFO: 2022-09-20 12:20:52,198: log_options() 'quotes_enabled = False'
+INFO: 2022-09-20 12:20:52,199: log_options() 'quotes_favorites_file = /home/mohammad/.config/variety/favorite_quotes.txt'
+INFO: 2022-09-20 12:20:52,199: log_options() 'quotes_font = CaskaydiaCove Nerd Font Mono Italic 21'
+INFO: 2022-09-20 12:20:52,199: log_options() 'quotes_hpos = 100'
+INFO: 2022-09-20 12:20:52,199: log_options() 'quotes_max_length = 250'
+INFO: 2022-09-20 12:20:52,199: log_options() 'quotes_tags = '
+INFO: 2022-09-20 12:20:52,199: log_options() 'quotes_text_color = [255, 255, 255]'
+INFO: 2022-09-20 12:20:52,199: log_options() 'quotes_text_shadow = False'
+INFO: 2022-09-20 12:20:52,199: log_options() 'quotes_vpos = 15'
+INFO: 2022-09-20 12:20:52,199: log_options() 'quotes_width = 70'
+INFO: 2022-09-20 12:20:52,199: log_options() 'safe_mode = False'
+INFO: 2022-09-20 12:20:52,199: log_options() 'set_wallpaper_script = /home/mohammad/.config/variety/scripts/set_wallpaper'
+INFO: 2022-09-20 12:20:52,199: log_options() 'slideshow_custom_enabled = False'
+INFO: 2022-09-20 12:20:52,199: log_options() 'slideshow_custom_folder = /home/mohammad/Pictures'
+INFO: 2022-09-20 12:20:52,199: log_options() 'slideshow_downloads_enabled = False'
+INFO: 2022-09-20 12:20:52,199: log_options() 'slideshow_fade = 0.4'
+INFO: 2022-09-20 12:20:52,199: log_options() 'slideshow_favorites_enabled = True'
+INFO: 2022-09-20 12:20:52,199: log_options() 'slideshow_mode = Fullscreen'
+INFO: 2022-09-20 12:20:52,199: log_options() 'slideshow_monitor = All'
+INFO: 2022-09-20 12:20:52,199: log_options() 'slideshow_pan = 0.05'
+INFO: 2022-09-20 12:20:52,199: log_options() 'slideshow_seconds = 6.0'
+INFO: 2022-09-20 12:20:52,199: log_options() 'slideshow_sort_order = Random'
+INFO: 2022-09-20 12:20:52,199: log_options() 'slideshow_sources_enabled = True'
+INFO: 2022-09-20 12:20:52,199: log_options() 'slideshow_zoom = 0.2'
+INFO: 2022-09-20 12:20:52,199: log_options() 'smart_enabled = False'
+INFO: 2022-09-20 12:20:52,199: log_options() 'smart_notice_shown = False'
+INFO: 2022-09-20 12:20:52,199: log_options() 'smart_register_shown = False'
+INFO: 2022-09-20 12:20:52,199: log_options() 'sources = [[False, 'favorites', 'The Favorites folder'], [False, 'fetched', 'The Fetched folder'], [False, 'folder', '/usr/share/backgrounds'], [False, 'flickr', 'user:www.flickr.com/photos/peter-levi/;user_id:93647178@N00;'], [False, 'apod', "NASA's Astronomy Picture of the Day"], [True, 'bing', 'Bing Photo of the Day'], [True, 'earthview', 'Google Earth View Wallpapers'], [True, 'natgeo', "National Geographic's photo of the day"], [False, 'unsplash', 'High-resolution photos from Unsplash.com']]'
+INFO: 2022-09-20 12:20:52,199: log_options() 'stats_enabled = True'
+INFO: 2022-09-20 12:20:52,199: log_options() 'stats_notice_shown = False'
+INFO: 2022-09-20 12:20:52,199: log_options() 'sync_enabled = True'
+INFO: 2022-09-20 12:20:52,199: log_options() 'use_landscape_enabled = True'
+INFO: 2022-09-20 12:20:52,199: log_options() 'wallhaven_api_key = '
+INFO: 2022-09-20 12:20:52,199: log_options() 'wallpaper_auto_rotate = False'
+INFO: 2022-09-20 12:20:52,199: log_options() 'wallpaper_display_mode = os'
+INFO: 2022-09-20 12:20:52,199: reload_config() 'No need to clear prepared queue'
+INFO: 2022-09-20 12:20:52,199: update_indicator() 'Setting file info to: /home/mohammad/.config/variety/Downloaded/Earth View/Taolanaro, Madagascar (ID-6003).jpg'
+INFO: 2022-09-20 12:20:52,201: load_banned() 'Missing or invalid banned URLs list, no URLs will be banned'
+INFO: 2022-09-20 12:20:52,201: load_last_change_time() 'Change interval < 6 hours, ignore persisted last_change_time, wait initially the whole interval: 300'
+INFO: 2022-09-20 12:20:52,201: update_indicator() 'Setting file info to: /home/mohammad/.config/variety/Downloaded/Earth View/Taolanaro, Madagascar (ID-6003).jpg'
+INFO: 2022-09-20 12:20:52,203: regular_change_thread() 'regular_change thread running'
+INFO: 2022-09-20 12:20:52,203: prepare_thread() 'Prepare thread running'
+INFO: 2022-09-20 12:20:52,204: prepare_thread() 'Prepared buffer contains 0 images'
+INFO: 2022-09-20 12:20:52,204: prepare_thread() 'Preparing some images'
+INFO: 2022-09-20 12:20:52,204: get_throttling() 'National Geographic: parsing serverside options'
+INFO: 2022-09-20 12:20:52,204: get_throttling() 'Could not parse National Geographic serverside options, using defaults None, None'
+INFO: 2022-09-20 12:20:52,204: get_throttling() 'National Geographic: parsing serverside options'
+INFO: 2022-09-20 12:20:52,204: update_indicator_icon() 'Creating indicator'
+INFO: 2022-09-20 12:20:52,205: get_throttling() 'Could not parse National Geographic serverside options, using defaults None, None'
+INFO: 2022-09-20 12:20:52,206: download_one() 'National Geographic: Downloading an image, config: None'
+INFO: 2022-09-20 12:20:52,207: download_one() 'National Geographic: Queue size: 0'
+INFO: 2022-09-20 12:20:52,207: get_throttling() 'National Geographic: parsing serverside options'
+INFO: 2022-09-20 12:20:52,207: get_throttling() 'Could not parse National Geographic serverside options, using defaults None, None'
+INFO: 2022-09-20 12:20:52,207: download_one() 'National Geographic: Filling queue'
+WARNING: 2022-09-20 12:20:52,212: create_menu() 'Variety Slideshow is not installed. This is an optional extension adding pan-and-zoom slideshows to Variety: see https://github.com/peterlevi/variety-slideshow for details'
+INFO: 2022-09-20 12:20:52,213: create_indicator() 'indicator backend: AppIndicator3'
+INFO: 2022-09-20 12:20:52,215: prepare_thread() 'After search prepared buffer contains 43 images'
+INFO: 2022-09-20 12:20:52,231: set_from_theme_icon() 'Showing indicator icon variety-indicator from GTK theme'
+INFO: 2022-09-20 12:20:52,302: do_set_wp() 'Calling do_set_wp with /home/mohammad/.config/variety/Downloaded/Earth View/Taolanaro, Madagascar (ID-6003).jpg, time: 1663660252.3028917'
+INFO: 2022-09-20 12:20:52,321: update_indicator() 'Setting file info to: /home/mohammad/.config/variety/Downloaded/Earth View/Taolanaro, Madagascar (ID-6003).jpg'
+INFO: 2022-09-20 12:20:52,324: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2022-09-20 12:20:53,427: reload() 'Reloading preferences dialog'
+INFO: 2022-09-20 12:20:53,706: download_one() 'National Geographic: Queue populated with 20 URLs'
+INFO: 2022-09-20 12:20:53,706: save_locally() 'Origin URL: https://www.nationalgeographic.co.uk/photo-of-day?image=1_10'
+INFO: 2022-09-20 12:20:53,706: save_locally() 'Image URL: https://static.nationalgeographic.co.uk/files/1_10.jpg'
+INFO: 2022-09-20 12:20:53,706: save_locally() 'Local path: /home/mohammad/.config/variety/Downloaded/National Geographic/1_10.jpg'
+INFO: 2022-09-20 12:20:53,707: save_locally() 'File already exists, skip downloading'
+INFO: 2022-09-20 12:20:54,216: trigger_download() 'Triggering download thread to check if download needed and possible'
+INFO: 2022-09-20 12:21:12,224: server_options_thread() 'Fetching server options from http://tiny.cc/variety-options-063'
+ERROR: 2022-09-20 12:21:17,258: server_options_thread() 'Could not fetch Variety serverside options'
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/usr/lib/python3.10/site-packages/urllib3/util/connection.py", line 95, in create_connection
+    raise err
+  File "/usr/lib/python3.10/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.10/site-packages/urllib3/connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3.10/site-packages/urllib3/connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.10/http/client.py", line 1282, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.10/http/client.py", line 1328, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.10/http/client.py", line 1277, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.10/http/client.py", line 1037, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.10/http/client.py", line 975, in send
+    self.connect()
+  File "/usr/lib/python3.10/site-packages/urllib3/connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "/usr/lib/python3.10/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fde463fe410>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3.10/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='tiny.cc', port=80): Max retries exceeded with url: /variety-options-063 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fde463fe410>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/site-packages/variety/VarietyWindow.py", line 1084, in server_options_thread
+    self.server_options = Util.fetch_json(VarietyWindow.SERVERSIDE_OPTIONS_URL)
+  File "/usr/lib/python3.10/site-packages/variety/Util.py", line 684, in fetch_json
+    return Util.request(url, data, **request_kwargs).json()
+  File "/usr/lib/python3.10/site-packages/variety/Util.py", line 654, in request
+    r = requests.request(
+  File "/usr/lib/python3.10/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3.10/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.10/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.10/site-packages/requests/adapters.py", line 565, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='tiny.cc', port=80): Max retries exceeded with url: /variety-options-063 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fde463fe410>: Failed to establish a new connection: [Errno 111] Connection refused'))
+INFO: 2022-09-20 12:21:47,293: server_options_thread() 'Fetching server options from http://tiny.cc/variety-options-063'
+ERROR: 2022-09-20 12:21:52,306: server_options_thread() 'Could not fetch Variety serverside options'
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/usr/lib/python3.10/site-packages/urllib3/util/connection.py", line 95, in create_connection
+    raise err
+  File "/usr/lib/python3.10/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.10/site-packages/urllib3/connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3.10/site-packages/urllib3/connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.10/http/client.py", line 1282, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.10/http/client.py", line 1328, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.10/http/client.py", line 1277, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.10/http/client.py", line 1037, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.10/http/client.py", line 975, in send
+    self.connect()
+  File "/usr/lib/python3.10/site-packages/urllib3/connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "/usr/lib/python3.10/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fde463fc850>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3.10/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='tiny.cc', port=80): Max retries exceeded with url: /variety-options-063 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fde463fc850>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/site-packages/variety/VarietyWindow.py", line 1084, in server_options_thread
+    self.server_options = Util.fetch_json(VarietyWindow.SERVERSIDE_OPTIONS_URL)
+  File "/usr/lib/python3.10/site-packages/variety/Util.py", line 684, in fetch_json
+    return Util.request(url, data, **request_kwargs).json()
+  File "/usr/lib/python3.10/site-packages/variety/Util.py", line 654, in request
+    r = requests.request(
+  File "/usr/lib/python3.10/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3.10/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.10/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.10/site-packages/requests/adapters.py", line 565, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='tiny.cc', port=80): Max retries exceeded with url: /variety-options-063 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fde463fc850>: Failed to establish a new connection: [Errno 111] Connection refused'))
+INFO: 2022-09-20 12:22:22,334: server_options_thread() 'Fetching server options from http://tiny.cc/variety-options-063'
+ERROR: 2022-09-20 12:22:27,352: server_options_thread() 'Could not fetch Variety serverside options'
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/usr/lib/python3.10/site-packages/urllib3/util/connection.py", line 95, in create_connection
+    raise err
+  File "/usr/lib/python3.10/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.10/site-packages/urllib3/connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3.10/site-packages/urllib3/connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.10/http/client.py", line 1282, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.10/http/client.py", line 1328, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.10/http/client.py", line 1277, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.10/http/client.py", line 1037, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.10/http/client.py", line 975, in send
+    self.connect()
+  File "/usr/lib/python3.10/site-packages/urllib3/connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "/usr/lib/python3.10/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fde463fe650>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3.10/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='tiny.cc', port=80): Max retries exceeded with url: /variety-options-063 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fde463fe650>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/site-packages/variety/VarietyWindow.py", line 1084, in server_options_thread
+    self.server_options = Util.fetch_json(VarietyWindow.SERVERSIDE_OPTIONS_URL)
+  File "/usr/lib/python3.10/site-packages/variety/Util.py", line 684, in fetch_json
+    return Util.request(url, data, **request_kwargs).json()
+  File "/usr/lib/python3.10/site-packages/variety/Util.py", line 654, in request
+    r = requests.request(
+  File "/usr/lib/python3.10/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3.10/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.10/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.10/site-packages/requests/adapters.py", line 565, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='tiny.cc', port=80): Max retries exceeded with url: /variety-options-063 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fde463fe650>: Failed to establish a new connection: [Errno 111] Connection refused'))
+INFO: 2022-09-20 12:22:57,384: server_options_thread() 'Fetching server options from http://tiny.cc/variety-options-063'
+ERROR: 2022-09-20 12:23:02,397: server_options_thread() 'Could not fetch Variety serverside options'
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/usr/lib/python3.10/site-packages/urllib3/util/connection.py", line 95, in create_connection
+    raise err
+  File "/usr/lib/python3.10/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.10/site-packages/urllib3/connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3.10/site-packages/urllib3/connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.10/http/client.py", line 1282, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.10/http/client.py", line 1328, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.10/http/client.py", line 1277, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.10/http/client.py", line 1037, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.10/http/client.py", line 975, in send
+    self.connect()
+  File "/usr/lib/python3.10/site-packages/urllib3/connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "/usr/lib/python3.10/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fde463fdb10>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3.10/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='tiny.cc', port=80): Max retries exceeded with url: /variety-options-063 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fde463fdb10>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/site-packages/variety/VarietyWindow.py", line 1084, in server_options_thread
+    self.server_options = Util.fetch_json(VarietyWindow.SERVERSIDE_OPTIONS_URL)
+  File "/usr/lib/python3.10/site-packages/variety/Util.py", line 684, in fetch_json
+    return Util.request(url, data, **request_kwargs).json()
+  File "/usr/lib/python3.10/site-packages/variety/Util.py", line 654, in request
+    r = requests.request(
+  File "/usr/lib/python3.10/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3.10/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.10/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.10/site-packages/requests/adapters.py", line 565, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='tiny.cc', port=80): Max retries exceeded with url: /variety-options-063 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fde463fdb10>: Failed to establish a new connection: [Errno 111] Connection refused'))
+INFO: 2022-09-20 12:23:32,403: server_options_thread() 'Fetching server options from http://tiny.cc/variety-options-063'
+ERROR: 2022-09-20 12:23:37,420: server_options_thread() 'Could not fetch Variety serverside options'
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/usr/lib/python3.10/site-packages/urllib3/util/connection.py", line 95, in create_connection
+    raise err
+  File "/usr/lib/python3.10/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3.10/site-packages/urllib3/connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3.10/site-packages/urllib3/connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.10/http/client.py", line 1282, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.10/http/client.py", line 1328, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.10/http/client.py", line 1277, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.10/http/client.py", line 1037, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.10/http/client.py", line 975, in send
+    self.connect()
+  File "/usr/lib/python3.10/site-packages/urllib3/connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "/usr/lib/python3.10/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fde463fd150>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3.10/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='tiny.cc', port=80): Max retries exceeded with url: /variety-options-063 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fde463fd150>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/site-packages/variety/VarietyWindow.py", line 1084, in server_options_thread
+    self.server_options = Util.fetch_json(VarietyWindow.SERVERSIDE_OPTIONS_URL)
+  File "/usr/lib/python3.10/site-packages/variety/Util.py", line 684, in fetch_json
+    return Util.request(url, data, **request_kwargs).json()
+  File "/usr/lib/python3.10/site-packages/variety/Util.py", line 654, in request
+    r = requests.request(
+  File "/usr/lib/python3.10/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3.10/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3.10/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3.10/site-packages/requests/adapters.py", line 565, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='tiny.cc', port=80): Max retries exceeded with url: /variety-options-063 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fde463fd150>: Failed to establish a new connection: [Errno 111] Connection refused'))
+INFO: 2022-09-20 12:23:54,710: get_throttling() 'Bing: parsing serverside options'
+INFO: 2022-09-20 12:23:54,711: get_throttling() 'Could not parse Bing serverside options, using defaults None, None'
+INFO: 2022-09-20 12:23:54,711: get_throttling() 'Bing: parsing serverside options'
+INFO: 2022-09-20 12:23:54,711: get_throttling() 'Could not parse Bing serverside options, using defaults None, None'
+INFO: 2022-09-20 12:23:54,711: download_one() 'Bing: Downloading an image, config: None'
+INFO: 2022-09-20 12:23:54,712: download_one() 'Bing: Queue size: 0'
+INFO: 2022-09-20 12:23:54,712: get_throttling() 'Bing: parsing serverside options'
+INFO: 2022-09-20 12:23:54,712: get_throttling() 'Could not parse Bing serverside options, using defaults None, None'
+INFO: 2022-09-20 12:23:54,712: download_one() 'Bing: Filling queue'
+INFO: 2022-09-20 12:23:56,173: download_one() 'Bing: Queue populated with 5 URLs'
+INFO: 2022-09-20 12:23:56,174: save_locally() 'Origin URL: https://www.bing.com/search?q=great+sand+dunes+national+park+and+preserve+established+history&form=hpcapt&filters=HpDate%3a%2220220913_0700%22'
+INFO: 2022-09-20 12:23:56,174: save_locally() 'Image URL: https://www.bing.com/th?id=OHR.GSDNPest_EN-US6985335988_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp'
+INFO: 2022-09-20 12:23:56,174: save_locally() 'Local path: /home/mohammad/.config/variety/Downloaded/Bing/OHR.GSDNPest_EN-US6985335988_1920x1080.jpg'
+INFO: 2022-09-20 12:23:56,174: save_locally() 'File already exists, skip downloading'
+INFO: 2022-09-20 12:23:57,176: get_throttling() 'National Geographic: parsing serverside options'
+INFO: 2022-09-20 12:23:57,176: get_throttling() 'Could not parse National Geographic serverside options, using defaults None, None'
+INFO: 2022-09-20 12:23:57,177: get_throttling() 'National Geographic: parsing serverside options'
+INFO: 2022-09-20 12:23:57,177: get_throttling() 'Could not parse National Geographic serverside options, using defaults None, None'
+INFO: 2022-09-20 12:23:57,177: download_one() 'National Geographic: Downloading an image, config: None'
+INFO: 2022-09-20 12:23:57,177: download_one() 'National Geographic: Queue size: 19'
+INFO: 2022-09-20 12:23:57,178: download_one() 'National Geographic: Queue populated with 19 URLs'
+INFO: 2022-09-20 12:23:57,178: save_locally() 'Origin URL: https://www.nationalgeographic.co.uk/photo-of-day?image=2_15'
+INFO: 2022-09-20 12:23:57,178: save_locally() 'Image URL: https://static.nationalgeographic.co.uk/files/2_15.jpg'
+INFO: 2022-09-20 12:23:57,178: save_locally() 'Local path: /home/mohammad/.config/variety/Downloaded/National Geographic/2_15.jpg'
+INFO: 2022-09-20 12:23:57,179: save_locally() 'File already exists, skip downloading'
+INFO: 2022-09-20 12:25:52,201: regular_change_thread() 'regular_change changes wallpaper'
+INFO: 2022-09-20 12:25:52,202: set_wallpaper() 'Calling set_wallpaper with /home/mohammad/.config/variety/Downloaded/Earth View/Mount Ney, Australia (ID-1629).jpg'
+INFO: 2022-09-20 12:25:52,203: prepare_thread() 'Prepared buffer contains 43 images'
+INFO: 2022-09-20 12:25:52,205: do_set_wp() 'Calling do_set_wp with /home/mohammad/.config/variety/Downloaded/Earth View/Mount Ney, Australia (ID-1629).jpg, time: 1663660552.2054303'
+INFO: 2022-09-20 12:25:52,227: update_indicator() 'Setting file info to: /home/mohammad/.config/variety/Downloaded/Earth View/Mount Ney, Australia (ID-1629).jpg'
+INFO: 2022-09-20 12:25:52,235: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2022-09-20 12:25:54,204: trigger_download() 'Triggering download thread to check if download needed and possible'
+INFO: 2022-09-20 12:25:54,205: trigger_download() 'Triggering download thread to check if download needed and possible'
+INFO: 2022-09-20 12:25:54,205: get_throttling() 'Bing: parsing serverside options'
+INFO: 2022-09-20 12:25:54,206: get_throttling() 'Could not parse Bing serverside options, using defaults None, None'
+INFO: 2022-09-20 12:25:54,206: get_throttling() 'Bing: parsing serverside options'
+INFO: 2022-09-20 12:25:54,206: get_throttling() 'Could not parse Bing serverside options, using defaults None, None'
+INFO: 2022-09-20 12:25:54,206: download_one() 'Bing: Downloading an image, config: None'
+INFO: 2022-09-20 12:25:54,206: download_one() 'Bing: Queue size: 4'
+INFO: 2022-09-20 12:25:54,206: download_one() 'Bing: Queue populated with 4 URLs'
+INFO: 2022-09-20 12:25:54,207: save_locally() 'Origin URL: https://www.bing.com/search?q=arashiyama+bamboo+forest+kyoto+japan+history&FORM=hpcapt&filters=HpDate%3a%2220220918_0700%22'
+INFO: 2022-09-20 12:25:54,207: save_locally() 'Image URL: https://www.bing.com/th?id=OHR.ArashiyamaBamboo_EN-US7569665443_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp'
+INFO: 2022-09-20 12:25:54,207: save_locally() 'Local path: /home/mohammad/.config/variety/Downloaded/Bing/OHR.ArashiyamaBamboo_EN-US7569665443_1920x1080.jpg'
+INFO: 2022-09-20 12:25:54,207: save_locally() 'File already exists, skip downloading'
+INFO: 2022-09-20 12:25:55,210: get_throttling() 'National Geographic: parsing serverside options'
+INFO: 2022-09-20 12:25:55,210: get_throttling() 'Could not parse National Geographic serverside options, using defaults None, None'
+INFO: 2022-09-20 12:25:55,211: get_throttling() 'National Geographic: parsing serverside options'
+INFO: 2022-09-20 12:25:55,211: get_throttling() 'Could not parse National Geographic serverside options, using defaults None, None'
+INFO: 2022-09-20 12:25:55,211: download_one() 'National Geographic: Downloading an image, config: None'
+INFO: 2022-09-20 12:25:55,211: download_one() 'National Geographic: Queue size: 18'
+INFO: 2022-09-20 12:25:55,211: download_one() 'National Geographic: Queue populated with 18 URLs'
+INFO: 2022-09-20 12:25:55,211: save_locally() 'Origin URL: https://www.nationalgeographic.co.uk/photo-of-day?image=3_13'
+INFO: 2022-09-20 12:25:55,212: save_locally() 'Image URL: https://static.nationalgeographic.co.uk/files/3_13.jpg'
+INFO: 2022-09-20 12:25:55,212: save_locally() 'Local path: /home/mohammad/.config/variety/Downloaded/National Geographic/3_13.jpg'
+INFO: 2022-09-20 12:25:55,212: save_locally() 'File already exists, skip downloading'
+INFO: 2022-09-20 12:25:56,214: get_throttling() 'Earth View: parsing serverside options'
+INFO: 2022-09-20 12:25:56,215: get_throttling() 'Could not parse Earth View serverside options, using defaults 20, None'
+INFO: 2022-09-20 12:25:56,215: get_throttling() 'Earth View: parsing serverside options'
+INFO: 2022-09-20 12:25:56,215: get_throttling() 'Could not parse Earth View serverside options, using defaults 20, None'
+INFO: 2022-09-20 12:25:56,215: download_one() 'Earth View: Downloading an image, config: None'
+INFO: 2022-09-20 12:25:56,215: download_one() 'Earth View: Queue size: 0'
+INFO: 2022-09-20 12:25:56,215: get_throttling() 'Earth View: parsing serverside options'
+INFO: 2022-09-20 12:25:56,216: get_throttling() 'Could not parse Earth View serverside options, using defaults 20, None'
+INFO: 2022-09-20 12:25:56,216: download_one() 'Earth View: Filling queue'
+INFO: 2022-09-20 12:25:57,842: download_one() 'Earth View: Queue populated with 1511 URLs'
+INFO: 2022-09-20 12:25:57,842: save_locally() 'Origin URL: https://earthview.withgoogle.com/1245'
+INFO: 2022-09-20 12:25:57,842: save_locally() 'Image URL: https://www.gstatic.com/prettyearth/assets/full/1245.jpg'
+INFO: 2022-09-20 12:25:57,842: save_locally() 'Local path: /home/mohammad/.config/variety/Downloaded/Earth View/Winterhaven, United States (ID-1245).jpg'
+INFO: 2022-09-20 12:25:59,544: save_locally() 'Download complete'
+INFO: 2022-09-20 12:25:59,545: update_indicator() 'Setting file info to: /home/mohammad/.config/variety/Downloaded/Earth View/Mount Ney, Australia (ID-1629).jpg'
+INFO: 2022-09-20 12:25:59,548: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2022-09-20 12:25:59,548: download_one_from() 'Adding downloaded file /home/mohammad/.config/variety/Downloaded/Earth View/Winterhaven, United States (ID-1245).jpg to unseen_downloads'
+INFO: 2022-09-20 12:29:00,551: get_throttling() 'Bing: parsing serverside options'
+INFO: 2022-09-20 12:29:00,551: get_throttling() 'Could not parse Bing serverside options, using defaults None, None'
+INFO: 2022-09-20 12:29:00,552: get_throttling() 'Bing: parsing serverside options'
+INFO: 2022-09-20 12:29:00,552: get_throttling() 'Could not parse Bing serverside options, using defaults None, None'
+INFO: 2022-09-20 12:29:00,552: download_one() 'Bing: Downloading an image, config: None'
+INFO: 2022-09-20 12:29:00,552: download_one() 'Bing: Queue size: 3'
+INFO: 2022-09-20 12:29:00,552: download_one() 'Bing: Queue populated with 3 URLs'
+INFO: 2022-09-20 12:29:00,553: save_locally() 'Origin URL: https://www.bing.com/search?q=marble+canyon+bridge&form=hpcapt&filters=HpDate%3a%2220220914_0700%22'
+INFO: 2022-09-20 12:29:00,553: save_locally() 'Image URL: https://www.bing.com/th?id=OHR.MarbleCanyon_EN-US7056773172_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp'
+INFO: 2022-09-20 12:29:00,553: save_locally() 'Local path: /home/mohammad/.config/variety/Downloaded/Bing/OHR.MarbleCanyon_EN-US7056773172_1920x1080.jpg'
+INFO: 2022-09-20 12:29:00,553: save_locally() 'File already exists, skip downloading'
+INFO: 2022-09-20 12:29:01,555: get_throttling() 'National Geographic: parsing serverside options'
+INFO: 2022-09-20 12:29:01,555: get_throttling() 'Could not parse National Geographic serverside options, using defaults None, None'
+INFO: 2022-09-20 12:29:01,556: get_throttling() 'National Geographic: parsing serverside options'
+INFO: 2022-09-20 12:29:01,556: get_throttling() 'Could not parse National Geographic serverside options, using defaults None, None'
+INFO: 2022-09-20 12:29:01,556: download_one() 'National Geographic: Downloading an image, config: None'
+INFO: 2022-09-20 12:29:01,556: download_one() 'National Geographic: Queue size: 17'
+INFO: 2022-09-20 12:29:01,556: download_one() 'National Geographic: Queue populated with 17 URLs'
+INFO: 2022-09-20 12:29:01,557: save_locally() 'Origin URL: https://www.nationalgeographic.co.uk/photo-of-day?image=4_11'
+INFO: 2022-09-20 12:29:01,557: save_locally() 'Image URL: https://static.nationalgeographic.co.uk/files/4_11.jpg'
+INFO: 2022-09-20 12:29:01,557: save_locally() 'Local path: /home/mohammad/.config/variety/Downloaded/National Geographic/4_11.jpg'
+INFO: 2022-09-20 12:29:01,557: save_locally() 'File already exists, skip downloading'
+INFO: 2022-09-20 12:30:52,444: regular_change_thread() 'regular_change changes wallpaper'
+INFO: 2022-09-20 12:30:52,445: set_wallpaper() 'Calling set_wallpaper with /home/mohammad/.config/variety/Downloaded/Earth View/Antarctica (ID-1010).jpg'
+INFO: 2022-09-20 12:30:52,445: prepare_thread() 'Prepared buffer contains 43 images'
+INFO: 2022-09-20 12:30:52,449: do_set_wp() 'Calling do_set_wp with /home/mohammad/.config/variety/Downloaded/Earth View/Antarctica (ID-1010).jpg, time: 1663660852.4490647'
+INFO: 2022-09-20 12:30:52,462: update_indicator() 'Setting file info to: /home/mohammad/.config/variety/Downloaded/Earth View/Antarctica (ID-1010).jpg'
+INFO: 2022-09-20 12:30:52,465: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2022-09-20 12:30:54,448: trigger_download() 'Triggering download thread to check if download needed and possible'
+INFO: 2022-09-20 12:30:54,448: trigger_download() 'Triggering download thread to check if download needed and possible'
+INFO: 2022-09-20 12:30:54,450: get_throttling() 'Bing: parsing serverside options'
+INFO: 2022-09-20 12:30:54,450: get_throttling() 'Could not parse Bing serverside options, using defaults None, None'
+INFO: 2022-09-20 12:30:54,450: get_throttling() 'Bing: parsing serverside options'
+INFO: 2022-09-20 12:30:54,451: get_throttling() 'Could not parse Bing serverside options, using defaults None, None'
+INFO: 2022-09-20 12:30:54,451: download_one() 'Bing: Downloading an image, config: None'
+INFO: 2022-09-20 12:30:54,451: download_one() 'Bing: Queue size: 2'
+INFO: 2022-09-20 12:30:54,451: download_one() 'Bing: Queue populated with 2 URLs'
+INFO: 2022-09-20 12:30:54,452: save_locally() 'Origin URL: https://www.bing.com/search?q=puma+cat&FORM=hpcapt&filters=HpDate%3a%2220220916_0700%22'
+INFO: 2022-09-20 12:30:54,452: save_locally() 'Image URL: https://www.bing.com/th?id=OHR.PianePuma_EN-US7221521942_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp'
+INFO: 2022-09-20 12:30:54,452: save_locally() 'Local path: /home/mohammad/.config/variety/Downloaded/Bing/OHR.PianePuma_EN-US7221521942_1920x1080.jpg'
+INFO: 2022-09-20 12:30:54,452: save_locally() 'File already exists, skip downloading'
+INFO: 2022-09-20 12:30:55,455: get_throttling() 'National Geographic: parsing serverside options'
+INFO: 2022-09-20 12:30:55,456: get_throttling() 'Could not parse National Geographic serverside options, using defaults None, None'
+INFO: 2022-09-20 12:30:55,456: get_throttling() 'National Geographic: parsing serverside options'
+INFO: 2022-09-20 12:30:55,456: get_throttling() 'Could not parse National Geographic serverside options, using defaults None, None'
+INFO: 2022-09-20 12:30:55,456: download_one() 'National Geographic: Downloading an image, config: None'
+INFO: 2022-09-20 12:30:55,456: download_one() 'National Geographic: Queue size: 16'
+INFO: 2022-09-20 12:30:55,457: download_one() 'National Geographic: Queue populated with 16 URLs'
+INFO: 2022-09-20 12:30:55,457: save_locally() 'Origin URL: https://www.nationalgeographic.co.uk/photo-of-day?image=5_10'
+INFO: 2022-09-20 12:30:55,457: save_locally() 'Image URL: https://static.nationalgeographic.co.uk/files/5_10.jpg'
+INFO: 2022-09-20 12:30:55,457: save_locally() 'Local path: /home/mohammad/.config/variety/Downloaded/National Geographic/5_10.jpg'
+INFO: 2022-09-20 12:30:55,457: save_locally() 'File already exists, skip downloading'
+INFO: 2022-09-20 12:30:56,460: get_throttling() 'Earth View: parsing serverside options'
+INFO: 2022-09-20 12:30:56,461: get_throttling() 'Could not parse Earth View serverside options, using defaults 20, None'
+INFO: 2022-09-20 12:30:56,461: get_throttling() 'Earth View: parsing serverside options'
+INFO: 2022-09-20 12:30:56,461: get_throttling() 'Could not parse Earth View serverside options, using defaults 20, None'
+INFO: 2022-09-20 12:30:56,461: download_one() 'Earth View: Downloading an image, config: None'
+INFO: 2022-09-20 12:30:56,462: download_one() 'Earth View: Queue size: 1510'
+INFO: 2022-09-20 12:30:56,462: download_one() 'Earth View: Queue populated with 1510 URLs'
+INFO: 2022-09-20 12:30:56,462: save_locally() 'Origin URL: https://earthview.withgoogle.com/1180'
+INFO: 2022-09-20 12:30:56,462: save_locally() 'Image URL: https://www.gstatic.com/prettyearth/assets/full/1180.jpg'
+INFO: 2022-09-20 12:30:56,462: save_locally() 'Local path: /home/mohammad/.config/variety/Downloaded/Earth View/Alrujban, Libya (ID-1180).jpg'
+INFO: 2022-09-20 12:30:57,724: save_locally() 'Download complete'
+INFO: 2022-09-20 12:30:57,724: update_indicator() 'Setting file info to: /home/mohammad/.config/variety/Downloaded/Earth View/Antarctica (ID-1010).jpg'
+INFO: 2022-09-20 12:30:57,727: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2022-09-20 12:30:57,728: download_one_from() 'Adding downloaded file /home/mohammad/.config/variety/Downloaded/Earth View/Alrujban, Libya (ID-1180).jpg to unseen_downloads'
+INFO: 2022-09-20 12:33:58,731: get_throttling() 'Bing: parsing serverside options'
+INFO: 2022-09-20 12:33:58,731: get_throttling() 'Could not parse Bing serverside options, using defaults None, None'
+INFO: 2022-09-20 12:33:58,731: get_throttling() 'Bing: parsing serverside options'
+INFO: 2022-09-20 12:33:58,732: get_throttling() 'Could not parse Bing serverside options, using defaults None, None'
+INFO: 2022-09-20 12:33:58,732: download_one() 'Bing: Downloading an image, config: None'
+INFO: 2022-09-20 12:33:58,732: download_one() 'Bing: Queue size: 1'
+INFO: 2022-09-20 12:33:58,732: download_one() 'Bing: Queue populated with 1 URLs'
+INFO: 2022-09-20 12:33:58,733: save_locally() 'Origin URL: https://www.bing.com/search?q=Sea+otter&form=hpcapt&filters=HpDate%3a%2220220920_0700%22'
+INFO: 2022-09-20 12:33:58,733: save_locally() 'Image URL: https://www.bing.com/th?id=OHR.SitkaOtters_EN-US7714053956_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp'
+INFO: 2022-09-20 12:33:58,733: save_locally() 'Local path: /home/mohammad/.config/variety/Downloaded/Bing/OHR.SitkaOtters_EN-US7714053956_1920x1080.jpg'
+INFO: 2022-09-20 12:33:58,733: save_locally() 'File already exists, skip downloading'
+INFO: 2022-09-20 12:33:59,736: get_throttling() 'National Geographic: parsing serverside options'
+INFO: 2022-09-20 12:33:59,737: get_throttling() 'Could not parse National Geographic serverside options, using defaults None, None'
+INFO: 2022-09-20 12:33:59,737: get_throttling() 'National Geographic: parsing serverside options'
+INFO: 2022-09-20 12:33:59,737: get_throttling() 'Could not parse National Geographic serverside options, using defaults None, None'
+INFO: 2022-09-20 12:33:59,737: download_one() 'National Geographic: Downloading an image, config: None'
+INFO: 2022-09-20 12:33:59,737: download_one() 'National Geographic: Queue size: 15'
+INFO: 2022-09-20 12:33:59,738: download_one() 'National Geographic: Queue populated with 15 URLs'
+INFO: 2022-09-20 12:33:59,738: save_locally() 'Origin URL: https://www.nationalgeographic.co.uk/photo-of-day?image=6_8'
+INFO: 2022-09-20 12:33:59,738: save_locally() 'Image URL: https://static.nationalgeographic.co.uk/files/6_8.jpg'
+INFO: 2022-09-20 12:33:59,738: save_locally() 'Local path: /home/mohammad/.config/variety/Downloaded/National Geographic/6_8.jpg'
+INFO: 2022-09-20 12:33:59,739: save_locally() 'File already exists, skip downloading'
+INFO: 2022-09-20 12:35:52,576: regular_change_thread() 'regular_change changes wallpaper'
+INFO: 2022-09-20 12:35:52,577: set_wallpaper() 'Calling set_wallpaper with /home/mohammad/.config/variety/Downloaded/National Geographic/11_8.jpg'
+INFO: 2022-09-20 12:35:52,578: prepare_thread() 'Prepared buffer contains 43 images'
+INFO: 2022-09-20 12:35:52,581: do_set_wp() 'Calling do_set_wp with /home/mohammad/.config/variety/Downloaded/National Geographic/11_8.jpg, time: 1663661152.581003'
+INFO: 2022-09-20 12:35:52,606: update_indicator() 'Setting file info to: /home/mohammad/.config/variety/Downloaded/National Geographic/11_8.jpg'
+INFO: 2022-09-20 12:35:52,610: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2022-09-20 12:35:54,580: trigger_download() 'Triggering download thread to check if download needed and possible'
+INFO: 2022-09-20 12:35:54,581: trigger_download() 'Triggering download thread to check if download needed and possible'
+INFO: 2022-09-20 12:35:54,582: get_throttling() 'Bing: parsing serverside options'
+INFO: 2022-09-20 12:35:54,582: get_throttling() 'Could not parse Bing serverside options, using defaults None, None'
+INFO: 2022-09-20 12:35:54,582: get_throttling() 'Bing: parsing serverside options'
+INFO: 2022-09-20 12:35:54,583: get_throttling() 'Could not parse Bing serverside options, using defaults None, None'
+INFO: 2022-09-20 12:35:54,583: download_one() 'Bing: Downloading an image, config: None'
+INFO: 2022-09-20 12:35:54,583: download_one() 'Bing: Queue size: 0'
+INFO: 2022-09-20 12:35:54,583: get_throttling() 'Bing: parsing serverside options'
+INFO: 2022-09-20 12:35:54,583: get_throttling() 'Could not parse Bing serverside options, using defaults None, None'
+INFO: 2022-09-20 12:35:54,584: download_one() 'Bing: Filling queue'
+INFO: 2022-09-20 12:35:55,347: download_one() 'Bing: Queue populated with 5 URLs'
+INFO: 2022-09-20 12:35:55,347: save_locally() 'Origin URL: https://www.bing.com/search?q=great+sand+dunes+national+park+and+preserve+established+history&form=hpcapt&filters=HpDate%3a%2220220913_0700%22'
+INFO: 2022-09-20 12:35:55,347: save_locally() 'Image URL: https://www.bing.com/th?id=OHR.GSDNPest_EN-US6985335988_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp'
+INFO: 2022-09-20 12:35:55,347: save_locally() 'Local path: /home/mohammad/.config/variety/Downloaded/Bing/OHR.GSDNPest_EN-US6985335988_1920x1080.jpg'
+INFO: 2022-09-20 12:35:55,347: save_locally() 'File already exists, skip downloading'
+INFO: 2022-09-20 12:35:56,349: get_throttling() 'National Geographic: parsing serverside options'
+INFO: 2022-09-20 12:35:56,349: get_throttling() 'Could not parse National Geographic serverside options, using defaults None, None'
+INFO: 2022-09-20 12:35:56,349: get_throttling() 'National Geographic: parsing serverside options'
+INFO: 2022-09-20 12:35:56,349: get_throttling() 'Could not parse National Geographic serverside options, using defaults None, None'
+INFO: 2022-09-20 12:35:56,350: download_one() 'National Geographic: Downloading an image, config: None'
+INFO: 2022-09-20 12:35:56,350: download_one() 'National Geographic: Queue size: 14'
+INFO: 2022-09-20 12:35:56,350: download_one() 'National Geographic: Queue populated with 14 URLs'
+INFO: 2022-09-20 12:35:56,350: save_locally() 'Origin URL: https://www.nationalgeographic.co.uk/photo-of-day?image=7_7'
+INFO: 2022-09-20 12:35:56,351: save_locally() 'Image URL: https://static.nationalgeographic.co.uk/files/7_7.jpg'
+INFO: 2022-09-20 12:35:56,351: save_locally() 'Local path: /home/mohammad/.config/variety/Downloaded/National Geographic/7_7.jpg'
+INFO: 2022-09-20 12:35:56,351: save_locally() 'File already exists, skip downloading'
+INFO: 2022-09-20 12:38:57,354: get_throttling() 'Bing: parsing serverside options'
+INFO: 2022-09-20 12:38:57,354: get_throttling() 'Could not parse Bing serverside options, using defaults None, None'
+INFO: 2022-09-20 12:38:57,354: get_throttling() 'Bing: parsing serverside options'
+INFO: 2022-09-20 12:38:57,354: get_throttling() 'Could not parse Bing serverside options, using defaults None, None'
+INFO: 2022-09-20 12:38:57,354: download_one() 'Bing: Downloading an image, config: None'
+INFO: 2022-09-20 12:38:57,354: download_one() 'Bing: Queue size: 4'
+INFO: 2022-09-20 12:38:57,354: download_one() 'Bing: Queue populated with 4 URLs'
+INFO: 2022-09-20 12:38:57,354: save_locally() 'Origin URL: https://www.bing.com/search?q=Sea+otter&form=hpcapt&filters=HpDate%3a%2220220920_0700%22'
+INFO: 2022-09-20 12:38:57,354: save_locally() 'Image URL: https://www.bing.com/th?id=OHR.SitkaOtters_EN-US7714053956_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp'
+INFO: 2022-09-20 12:38:57,354: save_locally() 'Local path: /home/mohammad/.config/variety/Downloaded/Bing/OHR.SitkaOtters_EN-US7714053956_1920x1080.jpg'
+INFO: 2022-09-20 12:38:57,354: save_locally() 'File already exists, skip downloading'
+INFO: 2022-09-20 12:38:58,356: get_throttling() 'National Geographic: parsing serverside options'
+INFO: 2022-09-20 12:38:58,356: get_throttling() 'Could not parse National Geographic serverside options, using defaults None, None'
+INFO: 2022-09-20 12:38:58,356: get_throttling() 'National Geographic: parsing serverside options'
+INFO: 2022-09-20 12:38:58,356: get_throttling() 'Could not parse National Geographic serverside options, using defaults None, None'
+INFO: 2022-09-20 12:38:58,356: download_one() 'National Geographic: Downloading an image, config: None'
+INFO: 2022-09-20 12:38:58,356: download_one() 'National Geographic: Queue size: 13'
+INFO: 2022-09-20 12:38:58,356: download_one() 'National Geographic: Queue populated with 13 URLs'
+INFO: 2022-09-20 12:38:58,356: save_locally() 'Origin URL: https://www.nationalgeographic.co.uk/photo-of-day?image=8_6'
+INFO: 2022-09-20 12:38:58,356: save_locally() 'Image URL: https://static.nationalgeographic.co.uk/files/8_6.jpg'
+INFO: 2022-09-20 12:38:58,356: save_locally() 'Local path: /home/mohammad/.config/variety/Downloaded/National Geographic/8_6.jpg'
+INFO: 2022-09-20 12:38:58,356: save_locally() 'File already exists, skip downloading'
+INFO: 2022-09-20 12:40:52,723: regular_change_thread() 'regular_change changes wallpaper'
+INFO: 2022-09-20 12:40:52,724: set_wallpaper() 'Calling set_wallpaper with /home/mohammad/.config/variety/Downloaded/Earth View/Mauritania (ID-6320).jpg'
+INFO: 2022-09-20 12:40:52,724: prepare_thread() 'Prepared buffer contains 43 images'
+INFO: 2022-09-20 12:40:52,727: do_set_wp() 'Calling do_set_wp with /home/mohammad/.config/variety/Downloaded/Earth View/Mauritania (ID-6320).jpg, time: 1663661452.7272658'
+INFO: 2022-09-20 12:40:52,741: update_indicator() 'Setting file info to: /home/mohammad/.config/variety/Downloaded/Earth View/Mauritania (ID-6320).jpg'
+INFO: 2022-09-20 12:40:52,745: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2022-09-20 12:40:54,726: trigger_download() 'Triggering download thread to check if download needed and possible'
+INFO: 2022-09-20 12:40:54,727: trigger_download() 'Triggering download thread to check if download needed and possible'
+INFO: 2022-09-20 12:40:54,728: get_throttling() 'Bing: parsing serverside options'
+INFO: 2022-09-20 12:40:54,728: get_throttling() 'Could not parse Bing serverside options, using defaults None, None'
+INFO: 2022-09-20 12:40:54,729: get_throttling() 'Bing: parsing serverside options'
+INFO: 2022-09-20 12:40:54,729: get_throttling() 'Could not parse Bing serverside options, using defaults None, None'
+INFO: 2022-09-20 12:40:54,729: download_one() 'Bing: Downloading an image, config: None'
+INFO: 2022-09-20 12:40:54,729: download_one() 'Bing: Queue size: 3'
+INFO: 2022-09-20 12:40:54,729: download_one() 'Bing: Queue populated with 3 URLs'
+INFO: 2022-09-20 12:40:54,730: save_locally() 'Origin URL: https://www.bing.com/search?q=marble+canyon+bridge&form=hpcapt&filters=HpDate%3a%2220220914_0700%22'
+INFO: 2022-09-20 12:40:54,730: save_locally() 'Image URL: https://www.bing.com/th?id=OHR.MarbleCanyon_EN-US7056773172_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp'
+INFO: 2022-09-20 12:40:54,730: save_locally() 'Local path: /home/mohammad/.config/variety/Downloaded/Bing/OHR.MarbleCanyon_EN-US7056773172_1920x1080.jpg'
+INFO: 2022-09-20 12:40:54,730: save_locally() 'File already exists, skip downloading'
+INFO: 2022-09-20 12:40:55,733: get_throttling() 'National Geographic: parsing serverside options'
+INFO: 2022-09-20 12:40:55,733: get_throttling() 'Could not parse National Geographic serverside options, using defaults None, None'
+INFO: 2022-09-20 12:40:55,733: get_throttling() 'National Geographic: parsing serverside options'
+INFO: 2022-09-20 12:40:55,734: get_throttling() 'Could not parse National Geographic serverside options, using defaults None, None'
+INFO: 2022-09-20 12:40:55,734: download_one() 'National Geographic: Downloading an image, config: None'
+INFO: 2022-09-20 12:40:55,734: download_one() 'National Geographic: Queue size: 12'
+INFO: 2022-09-20 12:40:55,734: download_one() 'National Geographic: Queue populated with 12 URLs'
+INFO: 2022-09-20 12:40:55,735: save_locally() 'Origin URL: https://www.nationalgeographic.co.uk/photo-of-day?image=9_5'
+INFO: 2022-09-20 12:40:55,735: save_locally() 'Image URL: https://static.nationalgeographic.co.uk/files/9_5.jpg'
+INFO: 2022-09-20 12:40:55,735: save_locally() 'Local path: /home/mohammad/.config/variety/Downloaded/National Geographic/9_5.jpg'
+INFO: 2022-09-20 12:40:55,735: save_locally() 'File already exists, skip downloading'
+INFO: 2022-09-20 12:40:56,738: get_throttling() 'Earth View: parsing serverside options'
+INFO: 2022-09-20 12:40:56,738: get_throttling() 'Could not parse Earth View serverside options, using defaults 20, None'
+INFO: 2022-09-20 12:40:56,739: get_throttling() 'Earth View: parsing serverside options'
+INFO: 2022-09-20 12:40:56,739: get_throttling() 'Could not parse Earth View serverside options, using defaults 20, None'
+INFO: 2022-09-20 12:40:56,739: download_one() 'Earth View: Downloading an image, config: None'
+INFO: 2022-09-20 12:40:56,739: download_one() 'Earth View: Queue size: 1509'
+INFO: 2022-09-20 12:40:56,739: download_one() 'Earth View: Queue populated with 1509 URLs'
+INFO: 2022-09-20 12:40:56,740: save_locally() 'Origin URL: https://earthview.withgoogle.com/1792'
+INFO: 2022-09-20 12:40:56,740: save_locally() 'Image URL: https://www.gstatic.com/prettyearth/assets/full/1792.jpg'
+INFO: 2022-09-20 12:40:56,740: save_locally() 'Local path: /home/mohammad/.config/variety/Downloaded/Earth View/Rio de Janeiro, Brazil (ID-1792).jpg'
+INFO: 2022-09-20 12:40:59,815: save_locally() 'Download complete'
+INFO: 2022-09-20 12:40:59,815: update_indicator() 'Setting file info to: /home/mohammad/.config/variety/Downloaded/Earth View/Mauritania (ID-6320).jpg'
+INFO: 2022-09-20 12:40:59,819: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2022-09-20 12:40:59,820: download_one_from() 'Adding downloaded file /home/mohammad/.config/variety/Downloaded/Earth View/Rio de Janeiro, Brazil (ID-1792).jpg to unseen_downloads'
+INFO: 2022-09-20 12:44:00,822: get_throttling() 'Bing: parsing serverside options'
+INFO: 2022-09-20 12:44:00,823: get_throttling() 'Could not parse Bing serverside options, using defaults None, None'
+INFO: 2022-09-20 12:44:00,823: get_throttling() 'Bing: parsing serverside options'
+INFO: 2022-09-20 12:44:00,823: get_throttling() 'Could not parse Bing serverside options, using defaults None, None'
+INFO: 2022-09-20 12:44:00,823: download_one() 'Bing: Downloading an image, config: None'
+INFO: 2022-09-20 12:44:00,823: download_one() 'Bing: Queue size: 2'
+INFO: 2022-09-20 12:44:00,824: download_one() 'Bing: Queue populated with 2 URLs'
+INFO: 2022-09-20 12:44:00,824: save_locally() 'Origin URL: https://www.bing.com/search?q=arashiyama+bamboo+forest+kyoto+japan+history&FORM=hpcapt&filters=HpDate%3a%2220220918_0700%22'
+INFO: 2022-09-20 12:44:00,824: save_locally() 'Image URL: https://www.bing.com/th?id=OHR.ArashiyamaBamboo_EN-US7569665443_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp'
+INFO: 2022-09-20 12:44:00,824: save_locally() 'Local path: /home/mohammad/.config/variety/Downloaded/Bing/OHR.ArashiyamaBamboo_EN-US7569665443_1920x1080.jpg'
+INFO: 2022-09-20 12:44:00,825: save_locally() 'File already exists, skip downloading'
+INFO: 2022-09-20 12:44:01,827: get_throttling() 'National Geographic: parsing serverside options'
+INFO: 2022-09-20 12:44:01,827: get_throttling() 'Could not parse National Geographic serverside options, using defaults None, None'
+INFO: 2022-09-20 12:44:01,828: get_throttling() 'National Geographic: parsing serverside options'
+INFO: 2022-09-20 12:44:01,828: get_throttling() 'Could not parse National Geographic serverside options, using defaults None, None'
+INFO: 2022-09-20 12:44:01,828: download_one() 'National Geographic: Downloading an image, config: None'
+INFO: 2022-09-20 12:44:01,828: download_one() 'National Geographic: Queue size: 11'
+INFO: 2022-09-20 12:44:01,828: download_one() 'National Geographic: Queue populated with 11 URLs'
+INFO: 2022-09-20 12:44:01,829: save_locally() 'Origin URL: https://www.nationalgeographic.co.uk/photo-of-day?image=10_8'
+INFO: 2022-09-20 12:44:01,829: save_locally() 'Image URL: https://static.nationalgeographic.co.uk/files/10_8.jpg'
+INFO: 2022-09-20 12:44:01,829: save_locally() 'Local path: /home/mohammad/.config/variety/Downloaded/National Geographic/10_8.jpg'
+INFO: 2022-09-20 12:44:01,829: save_locally() 'File already exists, skip downloading'
+INFO: 2022-09-20 12:45:52,906: regular_change_thread() 'regular_change changes wallpaper'
+INFO: 2022-09-20 12:45:52,907: set_wallpaper() 'Calling set_wallpaper with /home/mohammad/.config/variety/Downloaded/National Geographic/16_6.jpg'
+INFO: 2022-09-20 12:45:52,907: prepare_thread() 'Prepared buffer contains 43 images'
+INFO: 2022-09-20 12:45:52,909: do_set_wp() 'Calling do_set_wp with /home/mohammad/.config/variety/Downloaded/National Geographic/16_6.jpg, time: 1663661752.9098127'
+INFO: 2022-09-20 12:45:52,932: update_indicator() 'Setting file info to: /home/mohammad/.config/variety/Downloaded/National Geographic/16_6.jpg'
+INFO: 2022-09-20 12:45:52,938: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2022-09-20 12:45:54,908: trigger_download() 'Triggering download thread to check if download needed and possible'
+INFO: 2022-09-20 12:45:54,909: trigger_download() 'Triggering download thread to check if download needed and possible'
+INFO: 2022-09-20 12:45:54,910: get_throttling() 'Bing: parsing serverside options'
+INFO: 2022-09-20 12:45:54,910: get_throttling() 'Could not parse Bing serverside options, using defaults None, None'
+INFO: 2022-09-20 12:45:54,910: get_throttling() 'Bing: parsing serverside options'
+INFO: 2022-09-20 12:45:54,910: get_throttling() 'Could not parse Bing serverside options, using defaults None, None'
+INFO: 2022-09-20 12:45:54,910: download_one() 'Bing: Downloading an image, config: None'
+INFO: 2022-09-20 12:45:54,910: download_one() 'Bing: Queue size: 1'
+INFO: 2022-09-20 12:45:54,911: download_one() 'Bing: Queue populated with 1 URLs'
+INFO: 2022-09-20 12:45:54,911: save_locally() 'Origin URL: https://www.bing.com/search?q=puma+cat&FORM=hpcapt&filters=HpDate%3a%2220220916_0700%22'
+INFO: 2022-09-20 12:45:54,911: save_locally() 'Image URL: https://www.bing.com/th?id=OHR.PianePuma_EN-US7221521942_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp'
+INFO: 2022-09-20 12:45:54,911: save_locally() 'Local path: /home/mohammad/.config/variety/Downloaded/Bing/OHR.PianePuma_EN-US7221521942_1920x1080.jpg'
+INFO: 2022-09-20 12:45:54,911: save_locally() 'File already exists, skip downloading'
+INFO: 2022-09-20 12:45:55,914: get_throttling() 'National Geographic: parsing serverside options'
+INFO: 2022-09-20 12:45:55,914: get_throttling() 'Could not parse National Geographic serverside options, using defaults None, None'
+INFO: 2022-09-20 12:45:55,914: get_throttling() 'National Geographic: parsing serverside options'
+INFO: 2022-09-20 12:45:55,914: get_throttling() 'Could not parse National Geographic serverside options, using defaults None, None'
+INFO: 2022-09-20 12:45:55,914: download_one() 'National Geographic: Downloading an image, config: None'
+INFO: 2022-09-20 12:45:55,915: download_one() 'National Geographic: Queue size: 10'
+INFO: 2022-09-20 12:45:55,915: download_one() 'National Geographic: Queue populated with 10 URLs'
+INFO: 2022-09-20 12:45:55,915: save_locally() 'Origin URL: https://www.nationalgeographic.co.uk/photo-of-day?image=11_8'
+INFO: 2022-09-20 12:45:55,915: save_locally() 'Image URL: https://static.nationalgeographic.co.uk/files/11_8.jpg'
+INFO: 2022-09-20 12:45:55,915: save_locally() 'Local path: /home/mohammad/.config/variety/Downloaded/National Geographic/11_8.jpg'
+INFO: 2022-09-20 12:45:55,915: save_locally() 'File already exists, skip downloading'
+INFO: 2022-09-20 12:48:56,918: get_throttling() 'Bing: parsing serverside options'
+INFO: 2022-09-20 12:48:56,918: get_throttling() 'Could not parse Bing serverside options, using defaults None, None'
+INFO: 2022-09-20 12:48:56,918: get_throttling() 'Bing: parsing serverside options'
+INFO: 2022-09-20 12:48:56,918: get_throttling() 'Could not parse Bing serverside options, using defaults None, None'
+INFO: 2022-09-20 12:48:56,918: download_one() 'Bing: Downloading an image, config: None'
+INFO: 2022-09-20 12:48:56,918: download_one() 'Bing: Queue size: 0'
+INFO: 2022-09-20 12:48:56,918: get_throttling() 'Bing: parsing serverside options'
+INFO: 2022-09-20 12:48:56,918: get_throttling() 'Could not parse Bing serverside options, using defaults None, None'
+INFO: 2022-09-20 12:48:56,918: download_one() 'Bing: Filling queue'
+INFO: 2022-09-20 12:48:58,100: download_one() 'Bing: Queue populated with 5 URLs'
+INFO: 2022-09-20 12:48:58,100: save_locally() 'Origin URL: https://www.bing.com/search?q=Sea+otter&form=hpcapt&filters=HpDate%3a%2220220920_0700%22'
+INFO: 2022-09-20 12:48:58,100: save_locally() 'Image URL: https://www.bing.com/th?id=OHR.SitkaOtters_EN-US7714053956_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp'
+INFO: 2022-09-20 12:48:58,101: save_locally() 'Local path: /home/mohammad/.config/variety/Downloaded/Bing/OHR.SitkaOtters_EN-US7714053956_1920x1080.jpg'
+INFO: 2022-09-20 12:48:58,101: save_locally() 'File already exists, skip downloading'
+INFO: 2022-09-20 12:48:59,102: get_throttling() 'National Geographic: parsing serverside options'
+INFO: 2022-09-20 12:48:59,102: get_throttling() 'Could not parse National Geographic serverside options, using defaults None, None'
+INFO: 2022-09-20 12:48:59,102: get_throttling() 'National Geographic: parsing serverside options'
+INFO: 2022-09-20 12:48:59,103: get_throttling() 'Could not parse National Geographic serverside options, using defaults None, None'
+INFO: 2022-09-20 12:48:59,103: download_one() 'National Geographic: Downloading an image, config: None'
+INFO: 2022-09-20 12:48:59,103: download_one() 'National Geographic: Queue size: 9'
+INFO: 2022-09-20 12:48:59,103: download_one() 'National Geographic: Queue populated with 9 URLs'
+INFO: 2022-09-20 12:48:59,103: save_locally() 'Origin URL: https://www.nationalgeographic.co.uk/photo-of-day?image=12_7'
+INFO: 2022-09-20 12:48:59,103: save_locally() 'Image URL: https://static.nationalgeographic.co.uk/files/12_7.jpg'
+INFO: 2022-09-20 12:48:59,103: save_locally() 'Local path: /home/mohammad/.config/variety/Downloaded/National Geographic/12_7.jpg'
+INFO: 2022-09-20 12:48:59,103: save_locally() 'File already exists, skip downloading'
+INFO: 2022-09-20 12:50:53,149: regular_change_thread() 'regular_change changes wallpaper'
+INFO: 2022-09-20 12:50:53,149: set_wallpaper() 'Calling set_wallpaper with /home/mohammad/.config/variety/Downloaded/National Geographic/10_8.jpg'
+INFO: 2022-09-20 12:50:53,149: prepare_thread() 'Prepared buffer contains 42 images'
+INFO: 2022-09-20 12:50:53,150: do_set_wp() 'Calling do_set_wp with /home/mohammad/.config/variety/Downloaded/National Geographic/10_8.jpg, time: 1663662053.1500087'
+INFO: 2022-09-20 12:50:53,159: update_indicator() 'Setting file info to: /home/mohammad/.config/variety/Downloaded/National Geographic/10_8.jpg'
+INFO: 2022-09-20 12:50:53,162: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2022-09-20 12:50:55,150: trigger_download() 'Triggering download thread to check if download needed and possible'
+INFO: 2022-09-20 12:50:55,150: get_throttling() 'Bing: parsing serverside options'
+INFO: 2022-09-20 12:50:55,150: get_throttling() 'Could not parse Bing serverside options, using defaults None, None'
+INFO: 2022-09-20 12:50:55,150: get_throttling() 'Bing: parsing serverside options'
+INFO: 2022-09-20 12:50:55,150: get_throttling() 'Could not parse Bing serverside options, using defaults None, None'
+INFO: 2022-09-20 12:50:55,150: download_one() 'Bing: Downloading an image, config: None'
+INFO: 2022-09-20 12:50:55,150: download_one() 'Bing: Queue size: 4'
+INFO: 2022-09-20 12:50:55,150: download_one() 'Bing: Queue populated with 4 URLs'
+INFO: 2022-09-20 12:50:55,151: save_locally() 'Origin URL: https://www.bing.com/search?q=arashiyama+bamboo+forest+kyoto+japan+history&FORM=hpcapt&filters=HpDate%3a%2220220918_0700%22'
+INFO: 2022-09-20 12:50:55,151: save_locally() 'Image URL: https://www.bing.com/th?id=OHR.ArashiyamaBamboo_EN-US7569665443_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp'
+INFO: 2022-09-20 12:50:55,151: save_locally() 'Local path: /home/mohammad/.config/variety/Downloaded/Bing/OHR.ArashiyamaBamboo_EN-US7569665443_1920x1080.jpg'
+INFO: 2022-09-20 12:50:55,151: save_locally() 'File already exists, skip downloading'
+INFO: 2022-09-20 12:50:56,152: get_throttling() 'National Geographic: parsing serverside options'
+INFO: 2022-09-20 12:50:56,152: get_throttling() 'Could not parse National Geographic serverside options, using defaults None, None'
+INFO: 2022-09-20 12:50:56,152: get_throttling() 'National Geographic: parsing serverside options'
+INFO: 2022-09-20 12:50:56,152: get_throttling() 'Could not parse National Geographic serverside options, using defaults None, None'
+INFO: 2022-09-20 12:50:56,153: download_one() 'National Geographic: Downloading an image, config: None'
+INFO: 2022-09-20 12:50:56,153: download_one() 'National Geographic: Queue size: 8'
+INFO: 2022-09-20 12:50:56,153: download_one() 'National Geographic: Queue populated with 8 URLs'
+INFO: 2022-09-20 12:50:56,153: save_locally() 'Origin URL: https://www.nationalgeographic.co.uk/photo-of-day?image=13_6'
+INFO: 2022-09-20 12:50:56,153: save_locally() 'Image URL: https://static.nationalgeographic.co.uk/files/13_6.jpg'
+INFO: 2022-09-20 12:50:56,153: save_locally() 'Local path: /home/mohammad/.config/variety/Downloaded/National Geographic/13_6.jpg'
+INFO: 2022-09-20 12:50:56,153: save_locally() 'File already exists, skip downloading'
+INFO: 2022-09-20 12:53:57,155: get_throttling() 'Bing: parsing serverside options'
+INFO: 2022-09-20 12:53:57,155: get_throttling() 'Could not parse Bing serverside options, using defaults None, None'
+INFO: 2022-09-20 12:53:57,156: get_throttling() 'Bing: parsing serverside options'
+INFO: 2022-09-20 12:53:57,156: get_throttling() 'Could not parse Bing serverside options, using defaults None, None'
+INFO: 2022-09-20 12:53:57,156: download_one() 'Bing: Downloading an image, config: None'
+INFO: 2022-09-20 12:53:57,156: download_one() 'Bing: Queue size: 3'
+INFO: 2022-09-20 12:53:57,156: download_one() 'Bing: Queue populated with 3 URLs'
+INFO: 2022-09-20 12:53:57,157: save_locally() 'Origin URL: https://www.bing.com/search?q=puma+cat&FORM=hpcapt&filters=HpDate%3a%2220220916_0700%22'
+INFO: 2022-09-20 12:53:57,157: save_locally() 'Image URL: https://www.bing.com/th?id=OHR.PianePuma_EN-US7221521942_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp'
+INFO: 2022-09-20 12:53:57,157: save_locally() 'Local path: /home/mohammad/.config/variety/Downloaded/Bing/OHR.PianePuma_EN-US7221521942_1920x1080.jpg'
+INFO: 2022-09-20 12:53:57,157: save_locally() 'File already exists, skip downloading'
+INFO: 2022-09-20 12:53:58,159: get_throttling() 'National Geographic: parsing serverside options'
+INFO: 2022-09-20 12:53:58,160: get_throttling() 'Could not parse National Geographic serverside options, using defaults None, None'
+INFO: 2022-09-20 12:53:58,160: get_throttling() 'National Geographic: parsing serverside options'
+INFO: 2022-09-20 12:53:58,161: get_throttling() 'Could not parse National Geographic serverside options, using defaults None, None'
+INFO: 2022-09-20 12:53:58,161: download_one() 'National Geographic: Downloading an image, config: None'
+INFO: 2022-09-20 12:53:58,161: download_one() 'National Geographic: Queue size: 7'
+INFO: 2022-09-20 12:53:58,161: download_one() 'National Geographic: Queue populated with 7 URLs'
+INFO: 2022-09-20 12:53:58,162: save_locally() 'Origin URL: https://www.nationalgeographic.co.uk/photo-of-day?image=14_5'
+INFO: 2022-09-20 12:53:58,162: save_locally() 'Image URL: https://static.nationalgeographic.co.uk/files/14_5.jpg'
+INFO: 2022-09-20 12:53:58,162: save_locally() 'Local path: /home/mohammad/.config/variety/Downloaded/National Geographic/14_5.jpg'
+INFO: 2022-09-20 12:53:58,162: save_locally() 'File already exists, skip downloading'
+INFO: 2022-09-20 12:55:53,325: regular_change_thread() 'regular_change changes wallpaper'
+INFO: 2022-09-20 12:55:53,326: set_wallpaper() 'Calling set_wallpaper with /home/mohammad/.config/variety/Downloaded/Earth View/Winterhaven, United States (ID-1245).jpg'
+INFO: 2022-09-20 12:55:53,327: prepare_thread() 'Prepared buffer contains 42 images'
+INFO: 2022-09-20 12:55:53,330: do_set_wp() 'Calling do_set_wp with /home/mohammad/.config/variety/Downloaded/Earth View/Winterhaven, United States (ID-1245).jpg, time: 1663662353.3304422'
+INFO: 2022-09-20 12:55:53,358: update_indicator() 'Setting file info to: /home/mohammad/.config/variety/Downloaded/Earth View/Winterhaven, United States (ID-1245).jpg'
+INFO: 2022-09-20 12:55:53,367: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2022-09-20 12:55:55,328: trigger_download() 'Triggering download thread to check if download needed and possible'
+INFO: 2022-09-20 12:55:55,330: trigger_download() 'Triggering download thread to check if download needed and possible'
+INFO: 2022-09-20 12:55:55,330: get_throttling() 'Bing: parsing serverside options'
+INFO: 2022-09-20 12:55:55,331: get_throttling() 'Could not parse Bing serverside options, using defaults None, None'
+INFO: 2022-09-20 12:55:55,331: get_throttling() 'Bing: parsing serverside options'
+INFO: 2022-09-20 12:55:55,331: get_throttling() 'Could not parse Bing serverside options, using defaults None, None'
+INFO: 2022-09-20 12:55:55,332: download_one() 'Bing: Downloading an image, config: None'
+INFO: 2022-09-20 12:55:55,332: download_one() 'Bing: Queue size: 2'
+INFO: 2022-09-20 12:55:55,332: download_one() 'Bing: Queue populated with 2 URLs'
+INFO: 2022-09-20 12:55:55,333: save_locally() 'Origin URL: https://www.bing.com/search?q=marble+canyon+bridge&form=hpcapt&filters=HpDate%3a%2220220914_0700%22'
+INFO: 2022-09-20 12:55:55,333: save_locally() 'Image URL: https://www.bing.com/th?id=OHR.MarbleCanyon_EN-US7056773172_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp'
+INFO: 2022-09-20 12:55:55,333: save_locally() 'Local path: /home/mohammad/.config/variety/Downloaded/Bing/OHR.MarbleCanyon_EN-US7056773172_1920x1080.jpg'
+INFO: 2022-09-20 12:55:55,333: save_locally() 'File already exists, skip downloading'
+INFO: 2022-09-20 12:55:56,336: get_throttling() 'National Geographic: parsing serverside options'
+INFO: 2022-09-20 12:55:56,337: get_throttling() 'Could not parse National Geographic serverside options, using defaults None, None'
+INFO: 2022-09-20 12:55:56,337: get_throttling() 'National Geographic: parsing serverside options'
+INFO: 2022-09-20 12:55:56,337: get_throttling() 'Could not parse National Geographic serverside options, using defaults None, None'
+INFO: 2022-09-20 12:55:56,337: download_one() 'National Geographic: Downloading an image, config: None'
+INFO: 2022-09-20 12:55:56,338: download_one() 'National Geographic: Queue size: 6'
+INFO: 2022-09-20 12:55:56,338: download_one() 'National Geographic: Queue populated with 6 URLs'
+INFO: 2022-09-20 12:55:56,338: save_locally() 'Origin URL: https://www.nationalgeographic.co.uk/photo-of-day?image=15_5'
+INFO: 2022-09-20 12:55:56,339: save_locally() 'Image URL: https://static.nationalgeographic.co.uk/files/15_5.jpg'
+INFO: 2022-09-20 12:55:56,339: save_locally() 'Local path: /home/mohammad/.config/variety/Downloaded/National Geographic/15_5.jpg'
+INFO: 2022-09-20 12:55:56,339: save_locally() 'File already exists, skip downloading'
+INFO: 2022-09-20 12:55:57,342: get_throttling() 'Earth View: parsing serverside options'
+INFO: 2022-09-20 12:55:57,342: get_throttling() 'Could not parse Earth View serverside options, using defaults 20, None'
+INFO: 2022-09-20 12:55:57,342: get_throttling() 'Earth View: parsing serverside options'
+INFO: 2022-09-20 12:55:57,343: get_throttling() 'Could not parse Earth View serverside options, using defaults 20, None'
+INFO: 2022-09-20 12:55:57,343: download_one() 'Earth View: Downloading an image, config: None'
+INFO: 2022-09-20 12:55:57,343: download_one() 'Earth View: Queue size: 1508'
+INFO: 2022-09-20 12:55:57,343: download_one() 'Earth View: Queue populated with 1508 URLs'
+INFO: 2022-09-20 12:55:57,343: save_locally() 'Origin URL: https://earthview.withgoogle.com/2237'
+INFO: 2022-09-20 12:55:57,344: save_locally() 'Image URL: https://www.gstatic.com/prettyearth/assets/full/2237.jpg'
+INFO: 2022-09-20 12:55:57,344: save_locally() 'Local path: /home/mohammad/.config/variety/Downloaded/Earth View/Ragged Island, The Bahamas (ID-2237).jpg'
+INFO: 2022-09-20 12:56:00,195: save_locally() 'Download complete'
+INFO: 2022-09-20 12:56:00,195: update_indicator() 'Setting file info to: /home/mohammad/.config/variety/Downloaded/Earth View/Winterhaven, United States (ID-1245).jpg'
+INFO: 2022-09-20 12:56:00,199: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2022-09-20 12:56:00,200: download_one_from() 'Adding downloaded file /home/mohammad/.config/variety/Downloaded/Earth View/Ragged Island, The Bahamas (ID-2237).jpg to unseen_downloads'
+INFO: 2022-09-20 12:59:01,203: get_throttling() 'Bing: parsing serverside options'
+INFO: 2022-09-20 12:59:01,203: get_throttling() 'Could not parse Bing serverside options, using defaults None, None'
+INFO: 2022-09-20 12:59:01,203: get_throttling() 'Bing: parsing serverside options'
+INFO: 2022-09-20 12:59:01,203: get_throttling() 'Could not parse Bing serverside options, using defaults None, None'
+INFO: 2022-09-20 12:59:01,203: download_one() 'Bing: Downloading an image, config: None'
+INFO: 2022-09-20 12:59:01,203: download_one() 'Bing: Queue size: 1'
+INFO: 2022-09-20 12:59:01,203: download_one() 'Bing: Queue populated with 1 URLs'
+INFO: 2022-09-20 12:59:01,203: save_locally() 'Origin URL: https://www.bing.com/search?q=great+sand+dunes+national+park+and+preserve+established+history&form=hpcapt&filters=HpDate%3a%2220220913_0700%22'
+INFO: 2022-09-20 12:59:01,204: save_locally() 'Image URL: https://www.bing.com/th?id=OHR.GSDNPest_EN-US6985335988_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp'
+INFO: 2022-09-20 12:59:01,204: save_locally() 'Local path: /home/mohammad/.config/variety/Downloaded/Bing/OHR.GSDNPest_EN-US6985335988_1920x1080.jpg'
+INFO: 2022-09-20 12:59:01,204: save_locally() 'File already exists, skip downloading'
+INFO: 2022-09-20 12:59:02,205: get_throttling() 'National Geographic: parsing serverside options'
+INFO: 2022-09-20 12:59:02,205: get_throttling() 'Could not parse National Geographic serverside options, using defaults None, None'
+INFO: 2022-09-20 12:59:02,205: get_throttling() 'National Geographic: parsing serverside options'
+INFO: 2022-09-20 12:59:02,206: get_throttling() 'Could not parse National Geographic serverside options, using defaults None, None'
+INFO: 2022-09-20 12:59:02,206: download_one() 'National Geographic: Downloading an image, config: None'
+INFO: 2022-09-20 12:59:02,206: download_one() 'National Geographic: Queue size: 5'
+INFO: 2022-09-20 12:59:02,206: download_one() 'National Geographic: Queue populated with 5 URLs'
+INFO: 2022-09-20 12:59:02,207: save_locally() 'Origin URL: https://www.nationalgeographic.co.uk/photo-of-day?image=16_6'
+INFO: 2022-09-20 12:59:02,207: save_locally() 'Image URL: https://static.nationalgeographic.co.uk/files/16_6.jpg'
+INFO: 2022-09-20 12:59:02,207: save_locally() 'Local path: /home/mohammad/.config/variety/Downloaded/National Geographic/16_6.jpg'
+INFO: 2022-09-20 12:59:02,207: save_locally() 'File already exists, skip downloading'
+INFO: 2022-09-20 13:00:53,624: regular_change_thread() 'regular_change changes wallpaper'
+INFO: 2022-09-20 13:00:53,625: set_wallpaper() 'Calling set_wallpaper with /home/mohammad/.config/variety/Downloaded/Earth View/Supai, United States (ID-5080).jpg'
+INFO: 2022-09-20 13:00:53,626: prepare_thread() 'Prepared buffer contains 41 images'
+INFO: 2022-09-20 13:00:53,629: do_set_wp() 'Calling do_set_wp with /home/mohammad/.config/variety/Downloaded/Earth View/Supai, United States (ID-5080).jpg, time: 1663662653.6294274'
+INFO: 2022-09-20 13:00:53,643: update_indicator() 'Setting file info to: /home/mohammad/.config/variety/Downloaded/Earth View/Supai, United States (ID-5080).jpg'
+INFO: 2022-09-20 13:00:53,647: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2022-09-20 13:00:55,628: trigger_download() 'Triggering download thread to check if download needed and possible'
+INFO: 2022-09-20 13:00:55,628: get_throttling() 'Bing: parsing serverside options'
+INFO: 2022-09-20 13:00:55,629: get_throttling() 'Could not parse Bing serverside options, using defaults None, None'
+INFO: 2022-09-20 13:00:55,629: get_throttling() 'Bing: parsing serverside options'
+INFO: 2022-09-20 13:00:55,629: get_throttling() 'Could not parse Bing serverside options, using defaults None, None'
+INFO: 2022-09-20 13:00:55,629: download_one() 'Bing: Downloading an image, config: None'
+INFO: 2022-09-20 13:00:55,629: download_one() 'Bing: Queue size: 0'
+INFO: 2022-09-20 13:00:55,629: get_throttling() 'Bing: parsing serverside options'
+INFO: 2022-09-20 13:00:55,629: trigger_download() 'Triggering download thread to check if download needed and possible'
+INFO: 2022-09-20 13:00:55,629: get_throttling() 'Could not parse Bing serverside options, using defaults None, None'
+INFO: 2022-09-20 13:00:55,630: download_one() 'Bing: Filling queue'
+INFO: 2022-09-20 13:00:56,962: download_one() 'Bing: Queue populated with 5 URLs'
+INFO: 2022-09-20 13:00:56,962: save_locally() 'Origin URL: https://www.bing.com/search?q=marble+canyon+bridge&form=hpcapt&filters=HpDate%3a%2220220914_0700%22'
+INFO: 2022-09-20 13:00:56,962: save_locally() 'Image URL: https://www.bing.com/th?id=OHR.MarbleCanyon_EN-US7056773172_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp'
+INFO: 2022-09-20 13:00:56,962: save_locally() 'Local path: /home/mohammad/.config/variety/Downloaded/Bing/OHR.MarbleCanyon_EN-US7056773172_1920x1080.jpg'
+INFO: 2022-09-20 13:00:56,962: save_locally() 'File already exists, skip downloading'
+INFO: 2022-09-20 13:00:57,965: get_throttling() 'National Geographic: parsing serverside options'
+INFO: 2022-09-20 13:00:57,965: get_throttling() 'Could not parse National Geographic serverside options, using defaults None, None'
+INFO: 2022-09-20 13:00:57,965: get_throttling() 'National Geographic: parsing serverside options'
+INFO: 2022-09-20 13:00:57,966: get_throttling() 'Could not parse National Geographic serverside options, using defaults None, None'
+INFO: 2022-09-20 13:00:57,966: download_one() 'National Geographic: Downloading an image, config: None'
+INFO: 2022-09-20 13:00:57,966: download_one() 'National Geographic: Queue size: 4'
+INFO: 2022-09-20 13:00:57,966: download_one() 'National Geographic: Queue populated with 4 URLs'
+INFO: 2022-09-20 13:00:57,967: save_locally() 'Origin URL: https://www.nationalgeographic.co.uk/photo-of-day?image=17_6'
+INFO: 2022-09-20 13:00:57,967: save_locally() 'Image URL: https://static.nationalgeographic.co.uk/files/17_6.jpg'
+INFO: 2022-09-20 13:00:57,967: save_locally() 'Local path: /home/mohammad/.config/variety/Downloaded/National Geographic/17_6.jpg'
+INFO: 2022-09-20 13:00:57,967: save_locally() 'File already exists, skip downloading'
+INFO: 2022-09-20 13:00:58,971: get_throttling() 'Earth View: parsing serverside options'
+INFO: 2022-09-20 13:00:58,971: get_throttling() 'Could not parse Earth View serverside options, using defaults 20, None'
+INFO: 2022-09-20 13:00:58,972: get_throttling() 'Earth View: parsing serverside options'
+INFO: 2022-09-20 13:00:58,972: get_throttling() 'Could not parse Earth View serverside options, using defaults 20, None'
+INFO: 2022-09-20 13:00:58,973: download_one() 'Earth View: Downloading an image, config: None'
+INFO: 2022-09-20 13:00:58,973: download_one() 'Earth View: Queue size: 1507'
+INFO: 2022-09-20 13:00:58,973: download_one() 'Earth View: Queue populated with 1507 URLs'
+INFO: 2022-09-20 13:00:58,973: save_locally() 'Origin URL: https://earthview.withgoogle.com/1268'
+INFO: 2022-09-20 13:00:58,974: save_locally() 'Image URL: https://www.gstatic.com/prettyearth/assets/full/1268.jpg'
+INFO: 2022-09-20 13:00:58,974: save_locally() 'Local path: /home/mohammad/.config/variety/Downloaded/Earth View/Paris, France (ID-1268).jpg'
+INFO: 2022-09-20 13:01:02,143: save_locally() 'Download complete'
+INFO: 2022-09-20 13:01:02,143: update_indicator() 'Setting file info to: /home/mohammad/.config/variety/Downloaded/Earth View/Supai, United States (ID-5080).jpg'
+INFO: 2022-09-20 13:01:02,147: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2022-09-20 13:01:02,148: download_one_from() 'Adding downloaded file /home/mohammad/.config/variety/Downloaded/Earth View/Paris, France (ID-1268).jpg to unseen_downloads'
+INFO: 2022-09-20 13:04:03,151: get_throttling() 'Bing: parsing serverside options'
+INFO: 2022-09-20 13:04:03,152: get_throttling() 'Could not parse Bing serverside options, using defaults None, None'
+INFO: 2022-09-20 13:04:03,152: get_throttling() 'Bing: parsing serverside options'
+INFO: 2022-09-20 13:04:03,152: get_throttling() 'Could not parse Bing serverside options, using defaults None, None'
+INFO: 2022-09-20 13:04:03,152: download_one() 'Bing: Downloading an image, config: None'
+INFO: 2022-09-20 13:04:03,153: download_one() 'Bing: Queue size: 4'
+INFO: 2022-09-20 13:04:03,153: download_one() 'Bing: Queue populated with 4 URLs'
+INFO: 2022-09-20 13:04:03,153: save_locally() 'Origin URL: https://www.bing.com/search?q=puma+cat&FORM=hpcapt&filters=HpDate%3a%2220220916_0700%22'
+INFO: 2022-09-20 13:04:03,153: save_locally() 'Image URL: https://www.bing.com/th?id=OHR.PianePuma_EN-US7221521942_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp'
+INFO: 2022-09-20 13:04:03,154: save_locally() 'Local path: /home/mohammad/.config/variety/Downloaded/Bing/OHR.PianePuma_EN-US7221521942_1920x1080.jpg'
+INFO: 2022-09-20 13:04:03,154: save_locally() 'File already exists, skip downloading'
+INFO: 2022-09-20 13:04:04,156: get_throttling() 'National Geographic: parsing serverside options'
+INFO: 2022-09-20 13:04:04,157: get_throttling() 'Could not parse National Geographic serverside options, using defaults None, None'
+INFO: 2022-09-20 13:04:04,157: get_throttling() 'National Geographic: parsing serverside options'
+INFO: 2022-09-20 13:04:04,158: get_throttling() 'Could not parse National Geographic serverside options, using defaults None, None'
+INFO: 2022-09-20 13:04:04,158: download_one() 'National Geographic: Downloading an image, config: None'
+INFO: 2022-09-20 13:04:04,158: download_one() 'National Geographic: Queue size: 3'
+INFO: 2022-09-20 13:04:04,159: download_one() 'National Geographic: Queue populated with 3 URLs'
+INFO: 2022-09-20 13:04:04,159: save_locally() 'Origin URL: https://www.nationalgeographic.co.uk/photo-of-day?image=18_8'
+INFO: 2022-09-20 13:04:04,160: save_locally() 'Image URL: https://static.nationalgeographic.co.uk/files/18_8.jpg'
+INFO: 2022-09-20 13:04:04,160: save_locally() 'Local path: /home/mohammad/.config/variety/Downloaded/National Geographic/18_8.jpg'
+INFO: 2022-09-20 13:04:04,160: save_locally() 'File already exists, skip downloading'
+INFO: 2022-09-20 13:05:53,808: regular_change_thread() 'regular_change changes wallpaper'
+INFO: 2022-09-20 13:05:53,809: set_wallpaper() 'Calling set_wallpaper with /home/mohammad/.config/variety/Downloaded/Earth View/Rio de Janeiro, Brazil (ID-1792).jpg'
+INFO: 2022-09-20 13:05:53,809: prepare_thread() 'Prepared buffer contains 41 images'
+INFO: 2022-09-20 13:05:53,812: do_set_wp() 'Calling do_set_wp with /home/mohammad/.config/variety/Downloaded/Earth View/Rio de Janeiro, Brazil (ID-1792).jpg, time: 1663662953.8124475'
+INFO: 2022-09-20 13:05:53,835: update_indicator() 'Setting file info to: /home/mohammad/.config/variety/Downloaded/Earth View/Rio de Janeiro, Brazil (ID-1792).jpg'
+INFO: 2022-09-20 13:05:53,843: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2022-09-20 13:05:55,810: trigger_download() 'Triggering download thread to check if download needed and possible'
+INFO: 2022-09-20 13:05:55,812: trigger_download() 'Triggering download thread to check if download needed and possible'
+INFO: 2022-09-20 13:05:55,812: get_throttling() 'Bing: parsing serverside options'
+INFO: 2022-09-20 13:05:55,813: get_throttling() 'Could not parse Bing serverside options, using defaults None, None'
+INFO: 2022-09-20 13:05:55,813: get_throttling() 'Bing: parsing serverside options'
+INFO: 2022-09-20 13:05:55,813: get_throttling() 'Could not parse Bing serverside options, using defaults None, None'
+INFO: 2022-09-20 13:05:55,813: download_one() 'Bing: Downloading an image, config: None'
+INFO: 2022-09-20 13:05:55,813: download_one() 'Bing: Queue size: 3'
+INFO: 2022-09-20 13:05:55,814: download_one() 'Bing: Queue populated with 3 URLs'
+INFO: 2022-09-20 13:05:55,814: save_locally() 'Origin URL: https://www.bing.com/search?q=Sea+otter&form=hpcapt&filters=HpDate%3a%2220220920_0700%22'
+INFO: 2022-09-20 13:05:55,814: save_locally() 'Image URL: https://www.bing.com/th?id=OHR.SitkaOtters_EN-US7714053956_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp'
+INFO: 2022-09-20 13:05:55,814: save_locally() 'Local path: /home/mohammad/.config/variety/Downloaded/Bing/OHR.SitkaOtters_EN-US7714053956_1920x1080.jpg'
+INFO: 2022-09-20 13:05:55,815: save_locally() 'File already exists, skip downloading'
+INFO: 2022-09-20 13:05:56,818: get_throttling() 'National Geographic: parsing serverside options'
+INFO: 2022-09-20 13:05:56,818: get_throttling() 'Could not parse National Geographic serverside options, using defaults None, None'
+INFO: 2022-09-20 13:05:56,818: get_throttling() 'National Geographic: parsing serverside options'
+INFO: 2022-09-20 13:05:56,819: get_throttling() 'Could not parse National Geographic serverside options, using defaults None, None'
+INFO: 2022-09-20 13:05:56,819: download_one() 'National Geographic: Downloading an image, config: None'
+INFO: 2022-09-20 13:05:56,819: download_one() 'National Geographic: Queue size: 2'
+INFO: 2022-09-20 13:05:56,819: download_one() 'National Geographic: Queue populated with 2 URLs'
+INFO: 2022-09-20 13:05:56,820: save_locally() 'Origin URL: https://www.nationalgeographic.co.uk/photo-of-day?image=19_6'
+INFO: 2022-09-20 13:05:56,820: save_locally() 'Image URL: https://static.nationalgeographic.co.uk/files/19_6.jpg'
+INFO: 2022-09-20 13:05:56,820: save_locally() 'Local path: /home/mohammad/.config/variety/Downloaded/National Geographic/19_6.jpg'
+INFO: 2022-09-20 13:05:56,820: save_locally() 'File already exists, skip downloading'
+INFO: 2022-09-20 13:05:57,823: get_throttling() 'Earth View: parsing serverside options'
+INFO: 2022-09-20 13:05:57,823: get_throttling() 'Could not parse Earth View serverside options, using defaults 20, None'
+INFO: 2022-09-20 13:05:57,824: get_throttling() 'Earth View: parsing serverside options'
+INFO: 2022-09-20 13:05:57,824: get_throttling() 'Could not parse Earth View serverside options, using defaults 20, None'
+INFO: 2022-09-20 13:05:57,824: download_one() 'Earth View: Downloading an image, config: None'
+INFO: 2022-09-20 13:05:57,824: download_one() 'Earth View: Queue size: 1506'
+INFO: 2022-09-20 13:05:57,824: download_one() 'Earth View: Queue populated with 1506 URLs'
+INFO: 2022-09-20 13:05:57,825: save_locally() 'Origin URL: https://earthview.withgoogle.com/6006'
+INFO: 2022-09-20 13:05:57,825: save_locally() 'Image URL: https://www.gstatic.com/prettyearth/assets/full/6006.jpg'
+INFO: 2022-09-20 13:05:57,825: save_locally() 'Local path: /home/mohammad/.config/variety/Downloaded/Earth View/Madagascar (ID-6006).jpg'
+INFO: 2022-09-20 13:06:00,253: save_locally() 'Download complete'
+INFO: 2022-09-20 13:06:00,254: update_indicator() 'Setting file info to: /home/mohammad/.config/variety/Downloaded/Earth View/Rio de Janeiro, Brazil (ID-1792).jpg'
+INFO: 2022-09-20 13:06:00,257: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2022-09-20 13:06:00,257: download_one_from() 'Adding downloaded file /home/mohammad/.config/variety/Downloaded/Earth View/Madagascar (ID-6006).jpg to unseen_downloads'
+INFO: 2022-09-20 13:09:01,260: get_throttling() 'Bing: parsing serverside options'
+INFO: 2022-09-20 13:09:01,261: get_throttling() 'Could not parse Bing serverside options, using defaults None, None'
+INFO: 2022-09-20 13:09:01,261: get_throttling() 'Bing: parsing serverside options'
+INFO: 2022-09-20 13:09:01,261: get_throttling() 'Could not parse Bing serverside options, using defaults None, None'
+INFO: 2022-09-20 13:09:01,262: download_one() 'Bing: Downloading an image, config: None'
+INFO: 2022-09-20 13:09:01,262: download_one() 'Bing: Queue size: 2'
+INFO: 2022-09-20 13:09:01,262: download_one() 'Bing: Queue populated with 2 URLs'
+INFO: 2022-09-20 13:09:01,262: save_locally() 'Origin URL: https://www.bing.com/search?q=arashiyama+bamboo+forest+kyoto+japan+history&FORM=hpcapt&filters=HpDate%3a%2220220918_0700%22'
+INFO: 2022-09-20 13:09:01,263: save_locally() 'Image URL: https://www.bing.com/th?id=OHR.ArashiyamaBamboo_EN-US7569665443_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp'
+INFO: 2022-09-20 13:09:01,263: save_locally() 'Local path: /home/mohammad/.config/variety/Downloaded/Bing/OHR.ArashiyamaBamboo_EN-US7569665443_1920x1080.jpg'
+INFO: 2022-09-20 13:09:01,263: save_locally() 'File already exists, skip downloading'
+INFO: 2022-09-20 13:09:02,266: get_throttling() 'National Geographic: parsing serverside options'
+INFO: 2022-09-20 13:09:02,266: get_throttling() 'Could not parse National Geographic serverside options, using defaults None, None'
+INFO: 2022-09-20 13:09:02,267: get_throttling() 'National Geographic: parsing serverside options'
+INFO: 2022-09-20 13:09:02,267: get_throttling() 'Could not parse National Geographic serverside options, using defaults None, None'
+INFO: 2022-09-20 13:09:02,267: download_one() 'National Geographic: Downloading an image, config: None'
+INFO: 2022-09-20 13:09:02,267: download_one() 'National Geographic: Queue size: 1'
+INFO: 2022-09-20 13:09:02,268: download_one() 'National Geographic: Queue populated with 1 URLs'
+INFO: 2022-09-20 13:09:02,268: save_locally() 'Origin URL: https://www.nationalgeographic.co.uk/photo-of-day?image=20_6'
+INFO: 2022-09-20 13:09:02,268: save_locally() 'Image URL: https://static.nationalgeographic.co.uk/files/20_6.jpg'
+INFO: 2022-09-20 13:09:02,268: save_locally() 'Local path: /home/mohammad/.config/variety/Downloaded/National Geographic/20_6.jpg'
+INFO: 2022-09-20 13:09:10,656: save_locally() 'Download complete'
+INFO: 2022-09-20 13:09:10,656: update_indicator() 'Setting file info to: /home/mohammad/.config/variety/Downloaded/Earth View/Rio de Janeiro, Brazil (ID-1792).jpg'
+INFO: 2022-09-20 13:09:10,665: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2022-09-20 13:09:10,666: download_one_from() 'Adding downloaded file /home/mohammad/.config/variety/Downloaded/National Geographic/20_6.jpg to unseen_downloads'
+INFO: 2022-09-20 13:09:11,668: get_throttling() 'National Geographic: parsing serverside options'
+INFO: 2022-09-20 13:09:11,668: get_throttling() 'Could not parse National Geographic serverside options, using defaults None, None'
+INFO: 2022-09-20 13:09:11,668: get_throttling() 'National Geographic: parsing serverside options'
+INFO: 2022-09-20 13:09:11,668: get_throttling() 'Could not parse National Geographic serverside options, using defaults None, None'
+INFO: 2022-09-20 13:09:11,668: download_one() 'National Geographic: Downloading an image, config: None'
+INFO: 2022-09-20 13:09:11,668: download_one() 'National Geographic: Queue size: 0'
+INFO: 2022-09-20 13:09:11,668: get_throttling() 'National Geographic: parsing serverside options'
+INFO: 2022-09-20 13:09:11,668: get_throttling() 'Could not parse National Geographic serverside options, using defaults None, None'
+INFO: 2022-09-20 13:09:11,668: download_one() 'National Geographic: Filling queue'
+INFO: 2022-09-20 13:09:12,421: download_one() 'National Geographic: Queue populated with 20 URLs'
+INFO: 2022-09-20 13:09:12,422: save_locally() 'Origin URL: https://www.nationalgeographic.co.uk/photo-of-day?image=1_10'
+INFO: 2022-09-20 13:09:12,422: save_locally() 'Image URL: https://static.nationalgeographic.co.uk/files/1_10.jpg'
+INFO: 2022-09-20 13:09:12,422: save_locally() 'Local path: /home/mohammad/.config/variety/Downloaded/National Geographic/1_10.jpg'
+INFO: 2022-09-20 13:09:12,422: save_locally() 'File already exists, skip downloading'
+INFO: 2022-09-20 13:09:45,749: set_wallpaper() 'Calling set_wallpaper with /home/mohammad/.config/variety/Downloaded/Earth View/Ennedi, Chad (ID-1983).jpg'
+INFO: 2022-09-20 13:09:45,749: prepare_thread() 'Prepared buffer contains 41 images'
+INFO: 2022-09-20 13:09:45,753: do_set_wp() 'Calling do_set_wp with /home/mohammad/.config/variety/Downloaded/Earth View/Ennedi, Chad (ID-1983).jpg, time: 1663663185.7530088'
+INFO: 2022-09-20 13:09:45,778: update_indicator() 'Setting file info to: /home/mohammad/.config/variety/Downloaded/Earth View/Ennedi, Chad (ID-1983).jpg'
+INFO: 2022-09-20 13:09:45,786: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2022-09-20 13:09:47,751: trigger_download() 'Triggering download thread to check if download needed and possible'
+INFO: 2022-09-20 13:09:47,752: trigger_download() 'Triggering download thread to check if download needed and possible'
+INFO: 2022-09-20 13:09:47,753: get_throttling() 'Earth View: parsing serverside options'
+INFO: 2022-09-20 13:09:47,753: get_throttling() 'Could not parse Earth View serverside options, using defaults 20, None'
+INFO: 2022-09-20 13:09:47,753: get_throttling() 'Earth View: parsing serverside options'
+INFO: 2022-09-20 13:09:47,754: get_throttling() 'Could not parse Earth View serverside options, using defaults 20, None'
+INFO: 2022-09-20 13:09:47,754: download_one() 'Earth View: Downloading an image, config: None'
+INFO: 2022-09-20 13:09:47,754: download_one() 'Earth View: Queue size: 1505'
+INFO: 2022-09-20 13:09:47,754: download_one() 'Earth View: Queue populated with 1505 URLs'
+INFO: 2022-09-20 13:09:47,755: save_locally() 'Origin URL: https://earthview.withgoogle.com/2380'
+INFO: 2022-09-20 13:09:47,755: save_locally() 'Image URL: https://www.gstatic.com/prettyearth/assets/full/2380.jpg'
+INFO: 2022-09-20 13:09:47,755: save_locally() 'Local path: /home/mohammad/.config/variety/Downloaded/Earth View/Eromanga, Australia (ID-2380).jpg'
+INFO: 2022-09-20 13:09:48,526: set_wallpaper() 'Calling set_wallpaper with /home/mohammad/.config/variety/Downloaded/Earth View/Ragged Island, The Bahamas (ID-2237).jpg'
+INFO: 2022-09-20 13:09:48,526: prepare_thread() 'Prepared buffer contains 41 images'
+INFO: 2022-09-20 13:09:48,528: do_set_wp() 'Calling do_set_wp with /home/mohammad/.config/variety/Downloaded/Earth View/Ragged Island, The Bahamas (ID-2237).jpg, time: 1663663188.528429'
+INFO: 2022-09-20 13:09:48,539: update_indicator() 'Setting file info to: /home/mohammad/.config/variety/Downloaded/Earth View/Ragged Island, The Bahamas (ID-2237).jpg'
+INFO: 2022-09-20 13:09:48,543: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2022-09-20 13:09:50,527: trigger_download() 'Triggering download thread to check if download needed and possible'
+INFO: 2022-09-20 13:09:50,528: trigger_download() 'Triggering download thread to check if download needed and possible'
+INFO: 2022-09-20 13:09:50,880: save_locally() 'Download complete'
+INFO: 2022-09-20 13:09:50,881: update_indicator() 'Setting file info to: /home/mohammad/.config/variety/Downloaded/Earth View/Ragged Island, The Bahamas (ID-2237).jpg'
+INFO: 2022-09-20 13:09:50,886: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2022-09-20 13:09:50,886: download_one_from() 'Adding downloaded file /home/mohammad/.config/variety/Downloaded/Earth View/Eromanga, Australia (ID-2380).jpg to unseen_downloads'
+INFO: 2022-09-20 13:09:51,145: set_wallpaper() 'Calling set_wallpaper with /home/mohammad/.config/variety/Downloaded/Bing/OHR.SitkaOtters_EN-US7714053956_1920x1080.jpg'
+INFO: 2022-09-20 13:09:51,146: prepare_thread() 'Prepared buffer contains 41 images'
+INFO: 2022-09-20 13:09:51,149: do_set_wp() 'Calling do_set_wp with /home/mohammad/.config/variety/Downloaded/Bing/OHR.SitkaOtters_EN-US7714053956_1920x1080.jpg, time: 1663663191.1490886'
+INFO: 2022-09-20 13:09:51,176: update_indicator() 'Setting file info to: /home/mohammad/.config/variety/Downloaded/Bing/OHR.SitkaOtters_EN-US7714053956_1920x1080.jpg'
+INFO: 2022-09-20 13:09:51,179: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2022-09-20 13:09:51,889: get_throttling() 'Earth View: parsing serverside options'
+INFO: 2022-09-20 13:09:51,889: get_throttling() 'Could not parse Earth View serverside options, using defaults 20, None'
+INFO: 2022-09-20 13:09:51,889: get_throttling() 'Earth View: parsing serverside options'
+INFO: 2022-09-20 13:09:51,890: get_throttling() 'Could not parse Earth View serverside options, using defaults 20, None'
+INFO: 2022-09-20 13:09:51,890: download_one() 'Earth View: Downloading an image, config: None'
+INFO: 2022-09-20 13:09:51,890: download_one() 'Earth View: Queue size: 1504'
+INFO: 2022-09-20 13:09:51,890: download_one() 'Earth View: Queue populated with 1504 URLs'
+INFO: 2022-09-20 13:09:51,890: save_locally() 'Origin URL: https://earthview.withgoogle.com/6043'
+INFO: 2022-09-20 13:09:51,891: save_locally() 'Image URL: https://www.gstatic.com/prettyearth/assets/full/6043.jpg'
+INFO: 2022-09-20 13:09:51,891: save_locally() 'Local path: /home/mohammad/.config/variety/Downloaded/Earth View/Kabupaten Aceh Utara, Indonesia (ID-6043).jpg'
+INFO: 2022-09-20 13:09:53,147: trigger_download() 'Triggering download thread to check if download needed and possible'
+INFO: 2022-09-20 13:09:53,148: trigger_download() 'Triggering download thread to check if download needed and possible'
+INFO: 2022-09-20 13:09:53,168: save_locally() 'Download complete'
+INFO: 2022-09-20 13:09:53,168: update_indicator() 'Setting file info to: /home/mohammad/.config/variety/Downloaded/Bing/OHR.SitkaOtters_EN-US7714053956_1920x1080.jpg'
+INFO: 2022-09-20 13:09:53,170: list_files() 'More than 1 files in the folders, stop listing'
+INFO: 2022-09-20 13:09:53,171: download_one_from() 'Adding downloaded file /home/mohammad/.config/variety/Downloaded/Earth View/Kabupaten Aceh Utara, Indonesia (ID-6043).jpg to unseen_downloads'
+INFO: 2022-09-20 13:12:54,175: get_throttling() 'Bing: parsing serverside options'
+INFO: 2022-09-20 13:12:54,175: get_throttling() 'Could not parse Bing serverside options, using defaults None, None'
+INFO: 2022-09-20 13:12:54,176: get_throttling() 'Bing: parsing serverside options'
+INFO: 2022-09-20 13:12:54,176: get_throttling() 'Could not parse Bing serverside options, using defaults None, None'
+INFO: 2022-09-20 13:12:54,176: download_one() 'Bing: Downloading an image, config: None'
+INFO: 2022-09-20 13:12:54,176: download_one() 'Bing: Queue size: 1'
+INFO: 2022-09-20 13:12:54,176: download_one() 'Bing: Queue populated with 1 URLs'
+INFO: 2022-09-20 13:12:54,177: save_locally() 'Origin URL: https://www.bing.com/search?q=great+sand+dunes+national+park+and+preserve+established+history&form=hpcapt&filters=HpDate%3a%2220220913_0700%22'
+INFO: 2022-09-20 13:12:54,177: save_locally() 'Image URL: https://www.bing.com/th?id=OHR.GSDNPest_EN-US6985335988_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp'
+INFO: 2022-09-20 13:12:54,177: save_locally() 'Local path: /home/mohammad/.config/variety/Downloaded/Bing/OHR.GSDNPest_EN-US6985335988_1920x1080.jpg'
+INFO: 2022-09-20 13:12:54,177: save_locally() 'File already exists, skip downloading'
+INFO: 2022-09-20 13:12:55,180: get_throttling() 'National Geographic: parsing serverside options'
+INFO: 2022-09-20 13:12:55,180: get_throttling() 'Could not parse National Geographic serverside options, using defaults None, None'
+INFO: 2022-09-20 13:12:55,180: get_throttling() 'National Geographic: parsing serverside options'
+INFO: 2022-09-20 13:12:55,181: get_throttling() 'Could not parse National Geographic serverside options, using defaults None, None'
+INFO: 2022-09-20 13:12:55,181: download_one() 'National Geographic: Downloading an image, config: None'
+INFO: 2022-09-20 13:12:55,181: download_one() 'National Geographic: Queue size: 19'
+INFO: 2022-09-20 13:12:55,181: download_one() 'National Geographic: Queue populated with 19 URLs'
+INFO: 2022-09-20 13:12:55,181: save_locally() 'Origin URL: https://www.nationalgeographic.co.uk/photo-of-day?image=2_15'
+INFO: 2022-09-20 13:12:55,182: save_locally() 'Image URL: https://static.nationalgeographic.co.uk/files/2_15.jpg'
+INFO: 2022-09-20 13:12:55,182: save_locally() 'Local path: /home/mohammad/.config/variety/Downloaded/National Geographic/2_15.jpg'
+INFO: 2022-09-20 13:12:55,182: save_locally() 'File already exists, skip downloading'

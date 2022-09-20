@@ -1,0 +1,57 @@
+0
+/home/mohammad/.config/variety/Downloaded/Bing/OHR.SitkaOtters_EN-US7714053956_1920x1080.jpg
+/home/mohammad/.config/variety/Downloaded/Earth View/Ragged Island, The Bahamas (ID-2237).jpg
+/home/mohammad/.config/variety/Downloaded/Earth View/Ennedi, Chad (ID-1983).jpg
+/home/mohammad/.config/variety/Downloaded/Earth View/Rio de Janeiro, Brazil (ID-1792).jpg
+/home/mohammad/.config/variety/Downloaded/Earth View/Supai, United States (ID-5080).jpg
+/home/mohammad/.config/variety/Downloaded/Earth View/Winterhaven, United States (ID-1245).jpg
+/home/mohammad/.config/variety/Downloaded/National Geographic/10_8.jpg
+/home/mohammad/.config/variety/Downloaded/National Geographic/16_6.jpg
+/home/mohammad/.config/variety/Downloaded/Earth View/Mauritania (ID-6320).jpg
+/home/mohammad/.config/variety/Downloaded/National Geographic/11_8.jpg
+/home/mohammad/.config/variety/Downloaded/Earth View/Antarctica (ID-1010).jpg
+/home/mohammad/.config/variety/Downloaded/Earth View/Mount Ney, Australia (ID-1629).jpg
+/home/mohammad/.config/variety/Downloaded/Earth View/Taolanaro, Madagascar (ID-6003).jpg
+/home/mohammad/.config/variety/Downloaded/National Geographic/8_6.jpg
+/home/mohammad/.config/variety/Downloaded/National Geographic/19_6.jpg
+/home/mohammad/.config/variety/Downloaded/National Geographic/2_15.jpg
+/home/mohammad/.config/variety/Downloaded/Earth View/Al Jowf, Saudi Arabia (ID-1568).jpg
+/home/mohammad/.config/variety/Downloaded/National Geographic/17_6.jpg
+/home/mohammad/.config/variety/Downloaded/Bing/OHR.GSDNPest_EN-US6985335988_1920x1080.jpg
+/home/mohammad/.config/variety/Downloaded/Bing/OHR.PianePuma_EN-US7221521942_1920x1080.jpg
+/home/mohammad/.config/variety/Downloaded/National Geographic/13_6.jpg
+/home/mohammad/.config/variety/Downloaded/Earth View/Dover, United States (ID-2023).jpg
+/home/mohammad/.config/variety/Downloaded/National Geographic/14_5.jpg
+/home/mohammad/.config/variety/Downloaded/Earth View/Nagqu, China (ID-1834).jpg
+/home/mohammad/.config/variety/Downloaded/National Geographic/9_5.jpg
+/home/mohammad/.config/variety/Downloaded/Earth View/Mauritania (ID-6348).jpg
+/home/mohammad/.config/variety/Downloaded/Earth View/Nizip, Turkey (ID-1356).jpg
+/home/mohammad/.config/variety/Downloaded/National Geographic/10_8.jpg
+/home/mohammad/.config/variety/Downloaded/Earth View/Raffineria, Italy (ID-1267).jpg
+/home/mohammad/.config/variety/Downloaded/National Geographic/3_13.jpg
+/home/mohammad/.config/variety/Downloaded/Earth View/Marshall Islands (ID-6155).jpg
+/home/mohammad/.config/variety/Downloaded/Bing/OHR.MarbleCanyon_EN-US7056773172_1920x1080.jpg
+/home/mohammad/.config/variety/Downloaded/Bing/OHR.Aracari_EN-US6920359857_1920x1080.jpg
+/home/mohammad/.config/variety/Downloaded/Earth View/Mauritania (ID-6348).jpg
+/home/mohammad/.config/variety/Downloaded/National Geographic/7_7.jpg
+/home/mohammad/.config/variety/Downloaded/Earth View/Cape Coral, United States (ID-5479).jpg
+/home/mohammad/.config/variety/Downloaded/National Geographic/1_10.jpg
+/home/mohammad/.config/variety/Downloaded/Earth View/Nizip, Turkey (ID-1356).jpg
+/usr/share/backgrounds/archlinux-login-backgrounds/att-plain-01.png
+/usr/share/backgrounds/lunix_manjaro059I3.jpg
+/usr/share/backgrounds/bluemountain.jpg
+/usr/share/backgrounds/archlinux-login-backgrounds/att-plain-02.png
+/usr/share/backgrounds/wallpapers-juhraya/Manjaro Juhraya - dark_2.png
+/usr/share/backgrounds/wallpapers-juhraya/wMJ_J2b_by_Bogdan-Covaciu.jpg
+/usr/share/backgrounds/wallpapers-juhraya/Pastures_New_by_micsim35.jpg
+/usr/share/backgrounds/archlinux-login-backgrounds/att-03.jpg
+/usr/share/backgrounds/ant_mi3.jpg
+/usr/share/backgrounds/paper.jpg
+/usr/share/backgrounds/archlinux-login-backgrounds/att-01.jpg
+/usr/share/backgrounds/muser_manjaro-i3.jpg
+/usr/share/backgrounds/RREDesigns_i3.jpg
+/usr/share/backgrounds/wallpapers-juhraya/Dutch_Sunset_By_Rutger_Heijmerikx.jpg
+/usr/share/backgrounds/archlinux-login-backgrounds/att-02.jpg
+/usr/share/backgrounds/wallpapers-juhraya/Dutch_Sunset_By_Rutger_Heijmerikx.jpg
+/usr/share/backgrounds/ant_mi3.jpg
+/usr/share/backgrounds/i3_default_background.jpg
