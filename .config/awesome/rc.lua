@@ -30,10 +30,7 @@ local beautiful     = require("beautiful")
 local naughty       = require("naughty")
 naughty.config.defaults['icon_size'] = 100
 
---local menubar       = require("menubar")
-
 local lain          = require("lain")
-local freedesktop   = require("freedesktop")
 
 -- Enable hotkeys help widget for VIM and other apps
 -- when client with a matching name is opened:
@@ -106,7 +103,7 @@ local themes = {
 }
 
 -- choose your theme here
-local chosen_theme = themes[4]
+local chosen_theme = themes[2]
 
 local theme_path = string.format("%s/.config/awesome/themes/%s/theme.lua", os.getenv("HOME"), chosen_theme)
 beautiful.init(theme_path)
@@ -131,19 +128,11 @@ local virtualmachine    = "virtualbox"
 
 -- awesome variables
 awful.util.terminal = terminal
-awful.util.tagnames = {  "➊", "➋", "➌", "➍", "➎", "➏", "➐", "➑", "➒" }
---awful.util.tagnames = { "⠐", "⠡", "⠲", "⠵", "⠻", "⠿" }
---awful.util.tagnames = { "⌘", "♐", "⌥", "ℵ" }
---awful.util.tagnames = { "", "", "www", "telegram", "discord", "➏", "➐", "➑", "➒"}
--- Use this : https://fontawesome.com/cheatsheet
---awful.util.tagnames = { "", "", "", "", "" }
+awful.util.tagnames = { "term", "code", "www", "telegram", "discord", "mpv", "WM", "extra"}
 awful.layout.suit.tile.left.mirror = true
 awful.layout.layouts = {
     awful.layout.suit.tile,
     awful.layout.suit.floating,
-    awful.layout.suit.tile.left,
-    awful.layout.suit.tile.bottom,
-    awful.layout.suit.tile.top,
     --awful.layout.suit.fair,
     --awful.layout.suit.fair.horizontal,
     --awful.layout.suit.spiral,
@@ -155,12 +144,6 @@ awful.layout.layouts = {
     --awful.layout.suit.corner.ne,
     --awful.layout.suit.corner.sw,
     --awful.layout.suit.corner.se,
-    --lain.layout.cascade,
-    --lain.layout.cascade.tile,
-    --lain.layout.centerwork,
-    --lain.layout.centerwork.horizontal,
-    --lain.layout.termfair,
-    --lain.layout.termfair.center,
 }
 
 awful.util.taglist_buttons = my_table.join(
@@ -214,16 +197,6 @@ awful.util.tasklist_buttons = my_table.join(
     awful.button({ }, 4, function () awful.client.focus.byidx(1) end),
     awful.button({ }, 5, function () awful.client.focus.byidx(-1) end)
 )
-
-lain.layout.termfair.nmaster           = 3
-lain.layout.termfair.ncol              = 1
-lain.layout.termfair.center.nmaster    = 3
-lain.layout.termfair.center.ncol       = 1
-lain.layout.cascade.tile.offset_x      = dpi(2)
-lain.layout.cascade.tile.offset_y      = dpi(32)
-lain.layout.cascade.tile.extra_padding = dpi(5)
-lain.layout.cascade.tile.nmaster       = 5
-lain.layout.cascade.tile.ncol          = 2
 
 beautiful.init(string.format("%s/.config/awesome/themes/%s/theme.lua", os.getenv("HOME"), chosen_theme))
 -- }}}
@@ -313,8 +286,6 @@ globalkeys = my_table.join(
         {description = scrlocker, group = "alt+ctrl"}),
     awful.key({ modkey1, altkey   }, "l", function() awful.util.spawn( "archlinux-logout" ) end,
         {description = scrlocker, group = "alt+ctrl"}),
-    awful.key({ modkey1, altkey   }, "o", function() awful.spawn.with_shell("$HOME/.config/awesome/scripts/picom-toggle.sh") end,
-        {description = "Picom toggle", group = "alt+ctrl"}),
     awful.key({ modkey1, altkey   }, "s", function() awful.util.spawn( mediaplayer ) end,
         {description = mediaplayer, group = "alt+ctrl"}),
     awful.key({ modkey1, altkey   }, "t", function() awful.util.spawn( terminal ) end,
@@ -363,12 +334,10 @@ globalkeys = my_table.join(
     --    {description = "Xlunch app launcher", group = "altkey"}),
 
     -- screenshots
-    awful.key({ }, "Print", function () awful.util.spawn("scrot 'ArcoLinux-%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f $$(xdg-user-dir PICTURES)'") end,
-        {description = "Scrot", group = "screenshots"}),
-    awful.key({ modkey1           }, "Print", function () awful.util.spawn( "xfce4-screenshooter" ) end,
-        {description = "Xfce screenshot", group = "screenshots"}),
-    awful.key({ modkey1, "Shift"  }, "Print", function() awful.util.spawn("gnome-screenshot -i") end,
-        {description = "Gnome screenshot", group = "screenshots"}),
+    awful.key({ }, "Print", function () awful.util.spawn("scrot 'screenshot_%Y-%m-%d-%s_$wx$h.jpg' -e 'mv $f $$(xdg-user-dir PICTURES)'") end,
+        {description = "Screenshot the screen", group = "screenshots"}),
+    awful.key({ "Shift"           }, "Print", function () awful.util.spawn( "scrot 'screenshot_%Y-%m-%d-%s_$wx$h.jpg' -s -e 'mv $f $$(xdg-user-dir PICTURES)'" ) end,
+        {description = "Screenshot a rectangle", group = "screenshots"}),
 
     -- Personal keybindings}}}
 
@@ -557,14 +526,6 @@ globalkeys = my_table.join(
                   end
               end,
               {description = "restore minimized", group = "client"}),
-
-    -- Widgets popups
-    --awful.key({ altkey, }, "c", function () lain.widget.calendar.show(7) end,
-        --{description = "show calendar", group = "widgets"}),
-    --awful.key({ altkey, }, "h", function () if beautiful.fs then beautiful.fs.show(7) end end,
-              --{description = "show filesystem", group = "widgets"}),
-    --awful.key({ altkey, }, "w", function () if beautiful.weather then beautiful.weather.show(7) end end,
-              --{description = "show weather", group = "widgets"}),
 
     -- Brightness
     awful.key({ }, "XF86MonBrightnessUp", function () os.execute("xbacklight -inc 10") end,
@@ -795,31 +756,41 @@ root.keys(globalkeys)
 -- Rules to apply to new clients (through the "manage" signal).
 awful.rules.rules = {
     -- All clients will match this rule.
-    { rule = { },
-      properties = { border_width = beautiful.border_width,
-                     border_color = beautiful.border_normal,
-                     focus = awful.client.focus.filter,
-                     raise = true,
-                     keys = clientkeys,
-                     buttons = clientbuttons,
-                     screen = awful.screen.preferred,
-                     placement = awful.placement.no_overlap+awful.placement.no_offscreen,
-                     size_hints_honor = false
-     }
+    {
+        rule = { },
+        properties = {
+            border_width = beautiful.border_width,
+            border_color = beautiful.border_normal,
+            focus = awful.client.focus.filter,
+            raise = true,
+            keys = clientkeys,
+            buttons = clientbuttons,
+            screen = awful.screen.preferred,
+            placement = awful.placement.no_overlap+awful.placement.no_offscreen,
+            size_hints_honor = false
+        }
     },
-
+    {
+        rule = { class = "polybar" },
+        properties = { border_width = dpi(0) }
+    },
     -- Titlebars
-    { rule_any = { type = { "dialog", "normal" } },
-      properties = { titlebars_enabled = false } },
+    {
+        rule_any = { type = { "dialog", "normal" } },
+        properties = { titlebars_enabled = false } 
+    },
 
     { rule = { class = "Brave" },
       properties = { screen = 1, tag = awful.util.tagnames[3], switchtotag = true  } },
 
     { rule = { class = "TelegramDesktop" },
-      properties = { screen = 1, tag = awful.util.tagnames[4], switchtotag = true  } },
+      properties = { screen = 1, tag = awful.util.tagnames[4], switchtotag = true, border_width = dpi(6)  } },
+
+    { rule = { class = "discord" },
+      properties = { screen = 1, tag = awful.util.tagnames[5], switchtotag = true  } },
 
     { rule = { class = "Vlc" },
-          properties = { maximized = true } },
+          properties = { maximized = true, screen = 1, tag = awful.util.tagnames[6], switchtotag = true } },
 
     { rule = { class = "mpv" },
           properties = { maximized = true, screen = 1, tag = awful.util.tagnames[6], switchtotag = true } },
@@ -902,5 +873,5 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 -- }}}
 
 -- Autostart applications
-awful.spawn.with_shell("~/.config/awesome/autostart.sh")
-awful.spawn.with_shell("picom -b --config  $HOME/.config/awesome/picom.conf")
+awful.spawn.with_shell("bash ~/.autostart.sh")
+awful.spawn.with_shell("setxkbmap -layout us,ir -option 'grp:alt_caps_toggle'")
