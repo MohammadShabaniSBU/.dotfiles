@@ -24,6 +24,7 @@ nnoremap("<C-k>", "<C-w><C-k>", {desc = "go to the up screen"})
 nnoremap("<C-l>", "<C-w><C-l>", {desc = "go to the right screen"})
 
 -- floating terminal
+nnoremap("<leader><CR>", "<cmd>lua require('FTerm').toggle()<CR>", {desc = "toggle floating terminal"})
 tnoremap("<leader><CR>", "<cmd>lua require('FTerm').toggle()<CR>", {desc = "toggle floating terminal"})
 
 -- harpoon keybindings
