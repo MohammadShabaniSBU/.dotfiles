@@ -4,10 +4,12 @@ vim.opt.nu = true
 vim.opt.relativenumber = true
 vim.opt.cursorline = true
 
+local tab_size = 4
 
-vim.opt.tabstop = 4
-vim.opt.softtabstop = 4
-vim.opt.shiftwidth = 4
+vim.opt.tabstop = tab_size
+vim.opt.softtabstop = tab_size
+vim.opt.shiftwidth = tab_size
+
 vim.opt.expandtab = true
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
