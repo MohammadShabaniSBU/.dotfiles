@@ -40,3 +40,6 @@ lspconfig.html.setup {}
 
 -- tailwindcss config
 lspconfig.tailwindcss.setup {}
+
+-- clang config
+lspconfig.clangd.setup {}
