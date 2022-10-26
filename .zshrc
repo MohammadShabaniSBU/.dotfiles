@@ -6,7 +6,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=/usr/local/bin:$PATH:$HOME/go/bin
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -106,7 +106,39 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+alias ssh94="ssh ubuntu@94.101.185.83"
+alias ssh185="ssh ubuntu@185.226.116.154"
+alias maktab="cd ~/Code/Maktab"
 alias langfa="setxkbmap -layout us,ir -option 'grp:alt_caps_toggle'"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# Created by fodev.org
+function fod(){
+    case $1 in
+        "--enable" | "-e")
+            export http_proxy=http://fodev.org:8118/
+            export https_proxy=https://fodev.org:8118/
+            export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com"
+            export HTTP_PROXY=http://fodev.org:8118/
+            export HTTPS_PROXY=https://fodev.org:8118/
+            export NO_PROXY="localhost,127.0.0.1,localaddress,.localdomain.com"
+            echo "enable fod proxy !"
+        ;;
+        "--disable" | "-d")
+            unset http_proxy
+            unset https_proxy
+            unset no_proxy
+            unset HTTP_PROXY
+            unset HTTPS_PROXY
+            unset NO_PROXY
+            echo "disable fod proxy !"
+        ;;
+        *)
+            echo "Usage : fod [-e | --enable] [-d | --disable]"
+            echo "Example : "
+            echo "  fod --enable for enable fod proxy "
+            echo "  fod --disable for disable fod proxy "
+        ;;
+    esac
+}
