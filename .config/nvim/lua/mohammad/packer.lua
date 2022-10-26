@@ -4,7 +4,7 @@ return require('packer').startup(function(use)
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
 
-     -- install LSPs
+    -- install LSPs
     use { "williamboman/mason.nvim" }
 
     -- autocompletion
@@ -43,8 +43,8 @@ return require('packer').startup(function(use)
 
     -- status line in lua
     use {
-      'nvim-lualine/lualine.nvim',
-      requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+        'nvim-lualine/lualine.nvim',
+        requires = { 'kyazdani42/nvim-web-devicons', opt = true }
     }
 
     -- make transparent background
@@ -54,5 +54,17 @@ return require('packer').startup(function(use)
     use("numToStr/FTerm.nvim")
 
     -- whichkey
-   use("folke/which-key.nvim")
+    use("folke/which-key.nvim")
+
+    -- noice plugin for better cmd and notification
+    use({
+        'folke/noice.nvim',
+        event = "VimEnter",
+        requires = {
+            "MunifTanjim/nui.nvim",
+            "rcarriga/nvim-notify",
+            "hrsh7th/nvim-cmp",
+        },
+        config = function() require('noice').setup() end
+    })
 end)

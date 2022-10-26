@@ -44,6 +44,7 @@ nnoremap('<leader>dl', vim.diagnostic.open_float, { desc = "show diagnostic of c
 nnoremap('<leader>dw', vim.diagnostic.setloclist, { desc = "open diagnostic widnow of current buffer" })
 
 nnoremap('<leader>gd', vim.lsp.buf.definition, { desc = "go to definition" })
+nnoremap('<leader>Gd', '<CMD>vs<CR><leader>gd', { desc = "go to definition in vertical split" })
 nnoremap('<leader>gD', vim.lsp.buf.declaration, { desc = "go to declaration" })
 nnoremap('<leader>gt', vim.lsp.buf.type_definition, { desc = " go to type definition" })
 nnoremap('<leader>gi', vim.lsp.buf.implementation, { desc = "go to implementation" })
