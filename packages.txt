@@ -1,5 +1,4 @@
 alacritty
-awesome
 brave-browser
 discord
 neovim
@@ -11,4 +10,10 @@ scrot
 sddm
 stow
 telegram-desktop
-variety
+gitui
+code
+go
+zsh
+docker
+mpv
+vlc
