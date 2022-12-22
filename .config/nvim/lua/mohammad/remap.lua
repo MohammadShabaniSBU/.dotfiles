@@ -1,9 +1,14 @@
 local nnoremap = require("mohammad.keymap").nnoremap
 local inoremap = require("mohammad.keymap").inoremap
-local tnoremap = require("mohammad.keymap").tnoremap
+local vnoremap = require("mohammad.keymap").vnoremap
+local xnoremap = require("mohammad.keymap").xnoremap
 
 inoremap("jk", "<Esc>", { desc = "exit to normal mode" })
 inoremap("kj", "<Esc>", { desc = "exit to normal mode" })
+
+-- move selected block
+vnoremap("J", ":m '>+1<CR>gv=gv")
+vnoremap("K", ":m '<-2<CR>gv=gv")
 
 -- better vertical movement
 nnoremap("<C-o>", "<C-o>zz", { desc = "center the cursor line after move jumplist backward" })
@@ -15,40 +20,19 @@ nnoremap("<C-d>", "<C-d>zz", { desc = "center the cursor line after one page dow
 nnoremap("n", "nzz", { desc = "center the cursor line after find the next result" })
 nnoremap("N", "Nzz", { desc = "center the cursor line after find the previous result" })
 
--- telescope keybindings
-inoremap("<C-p>", "<cmd>Telescope find_files<CR>", { desc = "telescope fuzzy finder" })
-nnoremap("<C-p>", "<cmd>Telescope find_files<CR>", { desc = "telescope fuzzy finder" })
-nnoremap("<C-m>", "<cmd>Telescope jumplist<CR>", { desc = "telescope jumplist" })
-nnoremap("<leader>pv", "<cmd>Telescope file_browser<CR><Esc>", { desc = "toggle telescope file browser" })
-nnoremap("<leader>tc", "<cmd>Telescope colorscheme<CR><Esc>", { desc = "toggle telescope colorscheme picker" })
-nnoremap("<leader>ts", "<cmd>Telescope live_grep<CR><Esc>",
-    { desc = "toggle telescope live grep (search string in project)" })
-
 -- folding remaps
 nnoremap("z{", "zfa{", { desc = "fold {} block" })
 nnoremap("z(", "zfa(", { desc = "fold () block" })
 nnoremap("z[", "zfa[", { desc = "fold [] block" })
+
+-- replace the work under the cursor
+nnoremap("<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
 -- split navigation
 nnoremap("<C-h>", "<C-w><C-h>", { desc = "go to the left screen" })
 nnoremap("<C-j>", "<C-w><C-j>", { desc = "go to the down screen" })
 nnoremap("<C-k>", "<C-w><C-k>", { desc = "go to the up screen" })
 nnoremap("<C-l>", "<C-w><C-l>", { desc = "go to the right screen" })
-
--- floating terminal
-nnoremap("<leader><CR>", "<cmd>lua require('FTerm').toggle()<CR>", { desc = "toggle floating terminal" })
-tnoremap("<leader><CR>", "<cmd>lua require('FTerm').toggle()<CR>", { desc = "toggle floating terminal" })
-
--- gitui interface
-nnoremap("<leader>gg", function() require("FTerm"):new({cmd= "gitui"}):toggle() end)
-
-
--- harpoon keybindings
-nnoremap("<leader>ha", function() require("harpoon.mark").add_file() end, { desc = "add file to harpoon list" })
-nnoremap("<leader>ht", function() require("harpoon.ui").toggle_quick_menu() end, { desc = "toggle harpoon menu" })
-nnoremap("<leader>j", function() require("harpoon.ui").nav_file(1) end, { desc = "go to the first file of harpoon" })
-nnoremap("<leader>k", function() require("harpoon.ui").nav_file(2) end, { desc = "go to the second file of harpoon" })
-nnoremap("<leader>l", function() require("harpoon.ui").nav_file(3) end, { desc = "go to the third file of harpoon" })
 
 -- lsp keybindings
 nnoremap('<leader>dl', vim.diagnostic.open_float, { desc = "show diagnostic of current line" })
@@ -73,4 +57,4 @@ nnoremap('<leader>wl', function()
     print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
 end, { desc = "list workspace folders" })
 
-nnoremap('<leader>f', function () vim.lsp.buf.format { aync = true } end, { desc = "format the buffer" })
+nnoremap('<leader>f', function() vim.lsp.buf.format { aync = true } end, { desc = "format the buffer" })

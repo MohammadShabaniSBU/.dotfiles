@@ -1,3 +1,6 @@
+local nnoremap = require("mohammad.keymap").nnoremap
+local tnoremap = require("mohammad.keymap").tnoremap
+
 require'FTerm'.setup({
     ---Filetype of the terminal buffer
     ---@type string
@@ -49,3 +52,11 @@ require'FTerm'.setup({
     ---@type fun()|nil
     on_stderr = nil,
 })
+
+-- remaps
+nnoremap("<leader><CR>", "<cmd>lua require('FTerm').toggle()<CR>", { desc = "toggle floating terminal" })
+tnoremap("<leader><CR>", "<cmd>lua require('FTerm').toggle()<CR>", { desc = "toggle floating terminal" })
+
+-- gitui interface
+nnoremap("<leader>gg", function() require("FTerm"):new({cmd= "gitui"}):toggle() end)
+
