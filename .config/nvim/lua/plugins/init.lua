@@ -1,6 +1,5 @@
 require('plugins.lualine')
 require('plugins.lspconfig')
-require("plugins.transparent")
 require('plugins.treesitter')
 require("plugins.indent")
 require("plugins.luasnip")
