@@ -1,5 +1,4 @@
 alacritty
-brave-browser
 discord
 neovim
 nodejs
@@ -17,3 +16,5 @@ zsh
 docker
 mpv
 vlc
+git
+dua-cli

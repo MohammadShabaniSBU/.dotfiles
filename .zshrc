@@ -6,7 +6,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # If you come from bash you might have to change your $PATH.
-export PATH=/usr/local/bin:$PATH:$HOME/go/bin
+export PATH=/usr/local/bin:$PATH:$HOME/go/bin:$HOME/.local/bin
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -101,18 +101,7 @@ source $ZSH/oh-my-zsh.sh
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias ssh94="ssh ubuntu@94.101.185.83"
-alias ssh185="ssh ubuntu@185.226.116.154"
-alias maktab="cd ~/Code/Maktab"
-alias langfa="setxkbmap -layout us,ir -option 'grp:alt_caps_toggle'"
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 # Created by fodev.org
 function fod(){
     case $1 in
@@ -142,3 +131,18 @@ function fod(){
         ;;
     esac
 }
+
+# Example aliases
+# alias ohmyzsh="mate ~/.oh-my-zsh"
+
+alias zshconfig="nvim ~/.zshrc"
+alias ssh94="ssh ubuntu@94.101.185.83"
+alias ssh185="ssh ubuntu@185.226.116.154"
+alias ssh37="ssh ubuntu@37.32.14.131"
+alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
+alias pa='php artisan'
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+

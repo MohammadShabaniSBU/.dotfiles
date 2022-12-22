@@ -5,9 +5,20 @@ local tnoremap = require("mohammad.keymap").tnoremap
 inoremap("jk", "<Esc>", { desc = "exit to normal mode" })
 inoremap("kj", "<Esc>", { desc = "exit to normal mode" })
 
+-- better vertical movement
+nnoremap("<C-o>", "<C-o>zz", { desc = "center the cursor line after move jumplist backward" })
+nnoremap("<C-i>", "<C-i>zz", { desc = "center the cursor line after move jumplist forward" })
+
+nnoremap("<C-u>", "<C-u>zz", { desc = "center the cursor line after one page up" })
+nnoremap("<C-d>", "<C-d>zz", { desc = "center the cursor line after one page down" })
+
+nnoremap("n", "nzz", { desc = "center the cursor line after find the next result" })
+nnoremap("N", "Nzz", { desc = "center the cursor line after find the previous result" })
+
 -- telescope keybindings
 inoremap("<C-p>", "<cmd>Telescope find_files<CR>", { desc = "telescope fuzzy finder" })
 nnoremap("<C-p>", "<cmd>Telescope find_files<CR>", { desc = "telescope fuzzy finder" })
+nnoremap("<C-m>", "<cmd>Telescope jumplist<CR>", { desc = "telescope jumplist" })
 nnoremap("<leader>pv", "<cmd>Telescope file_browser<CR><Esc>", { desc = "toggle telescope file browser" })
 nnoremap("<leader>tc", "<cmd>Telescope colorscheme<CR><Esc>", { desc = "toggle telescope colorscheme picker" })
 nnoremap("<leader>ts", "<cmd>Telescope live_grep<CR><Esc>",
@@ -62,4 +73,4 @@ nnoremap('<leader>wl', function()
     print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
 end, { desc = "list workspace folders" })
 
-nnoremap('<leader>f', vim.lsp.buf.formatting, { desc = "format the buffer" })
+nnoremap('<leader>f', function () vim.lsp.buf.format { aync = true } end, { desc = "format the buffer" })

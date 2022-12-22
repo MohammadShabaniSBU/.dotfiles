@@ -1,16 +1,15 @@
 #! /bin/bash
 
-sudo pacman -Syu --noconfirm 
+#sudo pacman -Syu --noconfirm 
 
-sudo pacman -S --noconfirm $(cat ./packages.txt) 
+#sudo pacman -S --noconfirm $(cat ./packages.txt) 
 
-stow -t ~/ .
+#stow -t ~/ .
 
 function installNvim() {
     if [ ! -d ~/.local/share/nvim/site/pack/packer/start/packer.nvim ]; then
         git clone --depth 1 https://github.com/wbthomason/packer.nvim\
             ~/.local/share/nvim/site/pack/packer/start/packer.nvim 
-    else
     fi
     
     nvim --headless \
@@ -51,5 +50,5 @@ function zsh_full() {
     chsh -s "$(which zsh)"
 }
 
-installNvim
-zsh_full
+#installNvim
+#zsh_full

@@ -43,3 +43,20 @@ lspconfig.tailwindcss.setup {}
 
 -- clang config
 lspconfig.clangd.setup {}
+
+-- php config
+lspconfig.phpactor.setup {}
+
+-- HDL config
+lspconfig.hdl_checker.setup {
+    cmd = { "hdl_checker", "--lsp", };
+    filetypes = { "vhdl", "verilog", "systemverilog" };
+    root_dir = function(fname)
+        -- will look for the .hdl_checker.config file in parent directory, a
+        -- .git directory, or else use the current directory, in that order.
+        return util.root_pattern('.hdl_checker.config')(fname) or util.find_git_ancestor(fname) or
+            util.path.dirname(fname)
+    end;
+    settings = {};
+}
+
