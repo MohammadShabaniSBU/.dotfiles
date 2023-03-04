@@ -53,10 +53,3 @@ require'FTerm'.setup({
     on_stderr = nil,
 })
 
--- remaps
-nnoremap("<leader><CR>", "<cmd>lua require('FTerm').toggle()<CR>", { desc = "toggle floating terminal" })
-tnoremap("<leader><CR>", "<cmd>lua require('FTerm').toggle()<CR>", { desc = "toggle floating terminal" })
-
--- gitui interface
-nnoremap("<leader>gg", function() require("FTerm"):new({cmd= "gitui"}):toggle() end)
-

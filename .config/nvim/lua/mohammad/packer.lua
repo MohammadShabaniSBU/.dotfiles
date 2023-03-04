@@ -4,6 +4,9 @@ return require('packer').startup(function(use)
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
 
+    -- copilot
+    use { "zbirenbaum/copilot.lua" }
+
     use {
         'VonHeikemen/lsp-zero.nvim',
         requires = {
@@ -36,6 +39,8 @@ return require('packer').startup(function(use)
     use('nvim-lua/plenary.nvim')
     -- file browser; telescope extention
     use("nvim-telescope/telescope-file-browser.nvim")
+    -- recent files
+    use {"smartpde/telescope-recent-files"}
 
     -- harpoon: to navigate between some files blazingly fast
     use('ThePrimeagen/harpoon')

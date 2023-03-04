@@ -1,7 +1,7 @@
 local nnoremap = require("mohammad.keymap").nnoremap
 local inoremap = require("mohammad.keymap").inoremap
 local vnoremap = require("mohammad.keymap").vnoremap
-local xnoremap = require("mohammad.keymap").xnoremap
+local tnoremap = require("mohammad.keymap").tnoremap
 
 inoremap("jk", "<Esc>", { desc = "exit to normal mode" })
 inoremap("kj", "<Esc>", { desc = "exit to normal mode" })
@@ -9,6 +9,16 @@ inoremap("kj", "<Esc>", { desc = "exit to normal mode" })
 -- move selected block
 vnoremap("J", ":m '>+1<CR>gv=gv")
 vnoremap("K", ":m '<-2<CR>gv=gv")
+
+-- Telecope
+inoremap("<C-p>", "<cmd>Telescope find_files<CR>", { desc = "telescope fuzzy finder" })
+nnoremap("<C-p>", "<cmd>Telescope find_files<CR>", { desc = "telescope fuzzy finder" })
+nnoremap("<C-m>", "<cmd>Telescope jumplist<CR>", { desc = "telescope jumplist" })
+nnoremap("<leader>pv", "<cmd>Telescope file_browser<CR><Esc>", { desc = "toggle telescope file browser" })
+nnoremap("<leader>tc", "<cmd>Telescope colorscheme<CR><Esc>", { desc = "toggle telescope colorscheme picker" })
+nnoremap("<leader>ts", "<cmd>Telescope live_grep<CR><Esc>",
+    { desc = "toggle telescope live grep (search string in project)" })
+nnoremap("<leader><leader>", "<cmd>lua require('telescope').extensions.recent_files.pick()<CR>", { desc = "toggle recent files" })
 
 -- better vertical movement
 nnoremap("<C-o>", "<C-o>zz", { desc = "center the cursor line after move jumplist backward" })
@@ -27,6 +37,13 @@ nnoremap("z[", "zfa[", { desc = "fold [] block" })
 
 -- replace the work under the cursor
 nnoremap("<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+
+-- FTerm
+nnoremap("<leader><CR>", "<cmd>lua require('FTerm').toggle()<CR>", { desc = "toggle floating terminal" })
+tnoremap("<leader><CR>", "<cmd>lua require('FTerm').toggle()<CR>", { desc = "toggle floating terminal" })
+
+-- gitui interface
+nnoremap("<leader>gg", function() require("FTerm"):new({cmd= "gitui"}):toggle() end)
 
 -- split navigation
 nnoremap("<C-h>", "<C-w><C-h>", { desc = "go to the left screen" })
@@ -58,3 +75,4 @@ nnoremap('<leader>wl', function()
 end, { desc = "list workspace folders" })
 
 nnoremap('<leader>f', function() vim.lsp.buf.format { aync = true } end, { desc = "format the buffer" })
+

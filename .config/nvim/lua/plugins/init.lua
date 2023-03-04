@@ -1,4 +1,5 @@
 require('plugins.lualine')
+require('plugins.copilot')
 require('plugins.lspconfig')
 require('plugins.treesitter')
 require("plugins.indent")
