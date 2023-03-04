@@ -2,11 +2,10 @@ alacritty
 discord
 neovim
 nodejs
-openssh
+npm
 rustup
 php
-scrot
-sddm
+composer
 stow
 telegram-desktop
 gitui
@@ -18,3 +17,4 @@ mpv
 vlc
 git
 dua-cli
+ripgrep
