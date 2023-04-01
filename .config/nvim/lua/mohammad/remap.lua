@@ -76,3 +76,7 @@ end, { desc = "list workspace folders" })
 
 nnoremap('<leader>f', function() vim.lsp.buf.format { aync = true } end, { desc = "format the buffer" })
 
+
+vim.cmd([[
+    imap <silent><script><expr> <C-J> copilot#Accept("\<CR>")
+]])

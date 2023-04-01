@@ -5,7 +5,7 @@ return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
 
     -- copilot
-    use { "zbirenbaum/copilot.lua" }
+    use { "github/copilot.vim" }
 
     use {
         'VonHeikemen/lsp-zero.nvim',
