@@ -13,8 +13,10 @@ code
 go
 zsh
 docker
+docker-compose
 mpv
 vlc
 git
 dua-cli
 ripgrep
+lazydocker
