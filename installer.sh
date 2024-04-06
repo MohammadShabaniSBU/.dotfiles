@@ -1,34 +1,32 @@
-#! /bin/bash
+! /bin/bash
 
-#sudo pacman -Syu --noconfirm 
+function updatePacman() {
+    sudo pacman -Syu --noconfirm
+}
 
-#sudo pacman -S --noconfirm $(cat ./packages.txt) 
+function installParu() {
+    sudo pacman -S --needed base-devel
+    currentDir=$(pwd)
 
-#stow -t ~/ .
+    cd /tmp
+    git clone https://aur.archlinux.org/paru.git
+    cd paru
+    makepkg -si
+
+    cd $currentDir
+}
+
+function installPackages() {
+    sudo paru -S --noconfirm $(cat ./packages.txt) 
+}
+
+function linkConfigs() {
+    stow -t ~/ .
+}
 
 function installNvim() {
-    if [ ! -d ~/.local/share/nvim/site/pack/packer/start/packer.nvim ]; then
-        git clone --depth 1 https://github.com/wbthomason/packer.nvim\
-            ~/.local/share/nvim/site/pack/packer/start/packer.nvim 
-    fi
-    
-    nvim --headless \
-        +so ~/.config/nvim/lua/mohammad/packer.lua \
-        +PackerInstall \
-        +q
-    
-    nvim --headless \
-        +so ~/.config/nvim/lua/plugins/mason.lua \
-        +MasonInstall \
-            clangd \
-            dockerfile-language-server \
-            goimports \
-            gopls \
-            json-lsp \
-            python-lsp-server \
-            rust-analyzer \
-            typescript-language-server \
-        +qa
+    git clone --depth 1 https://github.com/AstroNvim/template ~/.config/nvim
+    git clone https://github.com/MohammadShabaniSBU/AstroNvim ~/.config/nvim/lua/user
 }
 
 function zsh_full() {
@@ -50,5 +48,9 @@ function zsh_full() {
     chsh -s "$(which zsh)"
 }
 
-#installNvim
-#zsh_full
+updatePacman
+installParu
+installPackages
+linkConfigs
+installNvim
+zsh_full
