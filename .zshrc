@@ -6,7 +6,8 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # If you come from bash you might have to change your $PATH.
-export PATH=/usr/local/bin:$PATH:$HOME/go/bin:$HOME/.local/bin:$HOME/.cargo/bin
+export PATH=/usr/local/bin:$PATH:$HOME/go/bin:$HOME/.local/bin:$HOME/.cargo/bin:$HOME/flutter/bin
+export PATH="$PATH":"$HOME/.pub-cache/bin"
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -78,6 +79,8 @@ plugins=(
     sudo
 )
 
+source $ZSH/oh-my-zsh.sh
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -135,9 +138,70 @@ function fod(){
 
 alias zshconfig="nvim ~/.zshrc"
 alias pa='php artisan'
+alias drun='docker compose exec -it app'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 
-source $ZSH/oh-my-zsh.sh
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/bin/terraform terraform
+
+# opam configuration
+[[ ! -r /home/mohammad/.opam/opam-init/init.zsh ]] || source /home/mohammad/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
+___MY_VMOPTIONS_SHELL_FILE="${HOME}/.jetbrains.vmoptions.sh"; if [ -f "${___MY_VMOPTIONS_SHELL_FILE}" ]; then . "${___MY_VMOPTIONS_SHELL_FILE}"; fi
+
+# load nvm
+source /usr/share/nvm/init-nvm.sh
+
+eval "$(fzf --zsh)"
+
+# Setting fd as the default source for fzf
+export FZF_DEFAULT_COMMAND='fd --type f --strip-cwd-prefix --hidden --follow --exclude .git'
+
+# To apply the command to CTRL-T as well
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+
+show_file_or_dir_preview="if [ -d {} ]; then eza --tree --color=always {} | head -200; else bat -n --color=always --line-range :500 {}; fi"
+
+export FZF_CTRL_T_OPTS="--preview '$show_file_or_dir_preview'"
+export FZF_ALT_C_OPTS="--preview 'eza --tree --color=always {} | head -200'"
+
+# Advanced customization of fzf options via _fzf_comprun function
+# - The first argument to the function is the name of the command.
+# - You should make sure to pass the rest of the arguments to fzf.
+_fzf_comprun() {
+  local command=$1
+  shift
+
+  case "$command" in
+    cd)           fzf --preview 'eza --tree --color=always {} | head -200' "$@" ;;
+    export|unset) fzf --preview "eval 'echo ${}'"         "$@" ;;
+    ssh)          fzf --preview 'dig {}'                   "$@" ;;
+    *)            fzf --preview "$show_file_or_dir_preview" "$@" ;;
+  esac
+}
+
+# ---- Eza (better ls) -----
+alias ls="eza --color=always --long --git --icons=always --no-time"
+
+# thefuck alias
+eval $(thefuck --alias)
+
+aws_tasks () {
+    local cluster=${1}
+    local service=${2}
+
+    aws ecs list-tasks --cluster ${cluster} --service ${service}
+}
+
+aws_shell () {
+    local cluster=${1}
+    local task=${2}
+    local container=${3}
+
+    aws ecs execute-command --cluster ${cluster} --task ${task} --container ${container} --command /bin/sh --interactive
+}
+
+export GIT_PAGER=bat
