@@ -36,3 +36,8 @@ visual-studio-code-bin
 postman-bin
 android-studio
 github-cli
+sniffnet
+fzf
+bat
+eza
+thefuck
