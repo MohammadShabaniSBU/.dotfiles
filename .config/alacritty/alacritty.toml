@@ -1,0 +1,11 @@
+[window]
+
+padding = { x = 10, y = 10 }
+decorations = "None"
+opacity = 0.8
+
+
+[font]
+
+size = 12
+normal = { family = "Caskaydia Cove Nerd Font" }
